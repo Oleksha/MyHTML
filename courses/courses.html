@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>var b=document.documentElement.classList;b.remove('no-js');if(!window.Promise||!window.sessionStorage||!!sessionStorage.getItem('muller.v2')){b.add('muller')}</script><script>dataLayer=[];</script><script>(function(w,d,s,l,i){ w[l]=w[l]||[];w[l].push({ 'gtm.start':new Date().getTime(),event:'gtm.js' });var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-MM92BM');</script>
+<!--<link rel="dns-prefetch" href="https://assets.htmlacademy.ru">-->
+<link rel="stylesheet" href="../css/style.core.css">
+<link rel="stylesheet" href="../css/style.text.css">
+<link rel="stylesheet" href="../css/style.profile.css">
+<link rel="preload" as="script" href="../js/general.js">
+<title>Интерактивные курсы — HTML Academy</title>
+<meta name="description" content="Наши онлайн-курсы.">
+<!--<meta name="theme-color" content="#2f358f">
+<link rel="mask-icon" href="/favicon.svg" color="#2f358f">
+<link rel="manifest" href="/htmlacademy.webmanifest">
+<meta name="application-name" content="HTML Academy">
+<meta name="apple-mobile-web-app-title" content="HTML Academy">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@htmlacademy_ru">
+<meta property="fb:app_id" content="144426935714125">
+<meta property="og:site_name" content="HTML Academy">
+<meta property="og:type" content="website">
+<meta name="twitter:url" property="og:url" content="https://htmlacademy.ru/courses">
+<meta name="twitter:title" property="og:title" content="Интерактивные онлайн-курсы HTML Academy">
+<meta name="twitter:description" property="og:description" content="Вместе мы научимся работать с живым кодом, самостоятельно решать задачи, приближённые к реальным, использовать новейшие технологии. Минимум скучной теории и максимум практических упражнений.">
+<link rel="image_src" href="https://assets.htmlacademy.ru/og/courses-vk.png">
+<meta name="twitter:image" property="og:image" content="https://assets.htmlacademy.ru/og/courses-og.png">
+<meta name="yandex-tableau-widget" content="logo=https://assets.htmlacademy.ru/img/logo--tableau.png,color=#ee5b33">
+<meta name="format-detection" content="telephone=no">-->
+</head>
+<body>
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MM92BM" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<header class="page-header">
+  <div class="page-header__inner">
+    <div class="page-header__top">
+      <a class="page-header__logo" href="../index.html" aria-label="На главную HTML Academy">
+        <img src="https://assets.htmlacademy.ru/img/logo.v2.svg" width="104" height="36" alt="HTML Academy">
+      </a>
+      <nav class="main-nav" aria-label="Основное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <ul class="main-nav__list main-nav__list--main main-nav__list--adaptive">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="../courses/courses.html">
+              <span class="main-nav__icon">
+                <svg aria-hidden="true" width="16" height="16">
+                  <use xlink:href="../img/general.svg#course"></use>
+                </svg>
+              </span>
+              Курсы
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="/profession/frontender">
+              <span class="main-nav__icon">
+                <svg aria-hidden="true" width="16" height="16">
+                  <use xlink:href="../img/general.svg#hat"></use>
+                </svg>
+              </span>
+              Профессия
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="/intensive">
+              <span class="main-nav__icon">
+                <svg aria-hidden="true" width="16" height="16">
+                  <use xlink:href="../img/general.svg#intensive"></use>
+                </svg>
+              </span>
+              Интенсивы
+            </a>
+          </li>
+        </ul>
+        <button class="main-nav__trigger" type="button" title="Главное меню">
+        <span>
+        </span>
+        </button>
+        <div class="main-nav__dropdown" id="main-menu">
+          <div class="main-nav__dropdown-inner">
+            <ul class="main-nav__list main-nav__list--main">
+              <li class="main-nav__item main-nav__item--active" itemprop="name">
+                <a class="main-nav__link" href="../courses/courses.html" itemprop="url">
+                  <span class="main-nav__icon" aria-hidden="true">
+                    <svg aria-hidden="true" width="16" height="16">
+                      <use xlink:href="../img/general.svg#course"></use>
+                    </svg>
+                  </span>
+                  Курсы
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--dropdown" itemprop="name">
+                <span class="main-nav__link" title="Профессии">
+                  <span class="main-nav__icon">
+                    <svg aria-hidden="true" width="16" height="16">
+                      <use xlink:href="../img/general.svg#hat"></use>
+                    </svg>
+                  </span>
+                  Профессии
+                </span>
+                <ul class="main-nav__list main-nav__list--lvl2">
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/profession/frontender">
+                      Фронтенд-разработчик
+                    </a>
+                  </li>
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/profession/react">
+                      React-разработчик
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item main-nav__item--dropdown" itemprop="name">
+                <a class="main-nav__link" href="/intensive" itemprop="url">
+                  <span class="main-nav__icon" aria-hidden="true">
+                    <svg aria-hidden="true" width="16" height="16">
+                      <use xlink:href="../img/general.svg#intensive"></use>
+                    </svg>
+                  </span>
+                  Интенсивы
+                </a>
+                <ul class="main-nav__list main-nav__list--lvl2">
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/intensive/htmlcss" itemprop="url">
+                      HTML и CSS, уровень 1
+                    </a>
+                  </li>
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/intensive/adaptive" itemprop="url">
+                      HTML и CSS, уровень 2
+                    </a>
+                  </li>
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/intensive/javascript" itemprop="url">
+                      JavaScript, уровень 1
+                    </a>
+                  </li>
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/intensive/ecmascript" itemprop="url">
+                      JavaScript, уровень 2
+                    </a>
+                  </li>
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/intensive/react" itemprop="url">
+                      JavaScript, уровень 3
+                    </a>
+                  </li>
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/intensive/nodejs" itemprop="url">
+                      Node.js, уровень 1
+                    </a>
+                  </li>
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/intensive/php" itemprop="url">
+                      PHP, уровень 1
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="main-nav__list main-nav__list--user">
+              <li class="main-nav__item" itemprop="name">
+                <a class="main-nav__link" href="/signup?redirect_url=https://htmlacademy.ru/courses" title="Регистрация" data-modal="open" data-value="register" itemprop="url">
+                  <span class="main-nav__icon" aria-hidden="true">
+                    <svg aria-hidden="true" width="16" height="16">
+                      <use xlink:href="../img/general.svg#user"></use>
+                    </svg>
+                  </span>
+                  Регистрация
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--login" itemprop="name">
+                <a class="main-nav__link" href="/login?redirect_url=https://htmlacademy.ru/courses" title="Войти" data-modal="open" data-value="login" itemprop="url">
+                  <span class="main-nav__icon" aria-hidden="true">
+                    <svg aria-hidden="true" width="16" height="16">
+                      <use xlink:href="../img/general.svg#login"></use>
+                    </svg>
+                  </span>
+                  Войти
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="notice notice--with-icon ">
+  <a class="notice__link gtm-notice-prof-frontend" href="/profession/frontender">
+    <span>
+      <svg class="notice__icon notice__icon--type-8" width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="notice__icon-path notice__icon-path-1" d="M50 37L18 53m27-16L13 53m27-16L8 53" stroke="#EEB342"/>
+        <path class="notice__icon-path notice__icon-path-3" fill-rule="evenodd" clip-rule="evenodd" d="M7 45l23 13 23-13-23-13L7 45zm23-15V8l23 13v22L30 30zM7 21L30 8v22L7 43V21z" fill="#18213F"/>
+        <path class="notice__icon-path notice__icon-path-2" fill-rule="evenodd" clip-rule="evenodd" d="M31.438 11.63L32 9.562l-2.108-3.59-7.892.29.032 4.459L22 48.7l9.265 5.271.172-.1.047-35.864-.046-6.376z" fill="#CA7327"/>
+        <path class="notice__icon-path notice__icon-path-2" fill-rule="evenodd" clip-rule="evenodd" d="M20.985 7.971l-8.985-5s5.681-4.327 8.985-2.537l2.783 1.509-.009-.005.014.012 4.66 2.521L30 5.315C26.5 3.97 20.985 7.97 20.985 7.97z" fill="#EFB341"/>
+        <path class="notice__icon-path notice__icon-path-2" fill-rule="evenodd" clip-rule="evenodd" d="M31.304 13.067c-.023-1.275-.063-3.16-.085-3.448-.376-2.128-1.467-2.58-1.601-2.629l-.047-.008-.088-.043C27.213 5.88 24 7.471 21 9.971v-2c2.41-2.195 7.5-4.542 10.339-1.821.303.293.564.628.776.993.36.619.617 1.36.764 2.214.013.07.044.256.105 3.692L33 51.986l-1.677.985-.019-39.904z" fill="#D39D29"/>
+        <path class="notice__icon-path notice__icon-path-2" fill-rule="evenodd" clip-rule="evenodd" d="M12 4.971l9 5v-2l-9-5v2z" fill="#CA7327"/>
+        <path class="notice__icon-path notice__icon-path-2" opacity=".891" fill-rule="evenodd" clip-rule="evenodd" d="M19 11v26l-8 4.5v-26l8-4.5z" fill="url(#paint0_linear)"/>
+        <path class="notice__icon-path notice__icon-path-5" opacity=".8" fill-rule="evenodd" clip-rule="evenodd" d="M24 15v26l-8 4.5v-26l8-4.5z" fill="#fff"/>
+        <path class="notice__icon-path notice__icon-path-2" fill-rule="evenodd" clip-rule="evenodd" d="M26 36l2 1V18l-2-1v19z" fill="#20438F"/>
+        <path class="notice__icon-path notice__icon-path-2" fill-rule="evenodd" clip-rule="evenodd" d="M41 8l-15 9 2 1 15-9-2-1z" fill="#7FB7E2"/>
+        <path class="notice__icon-path notice__icon-path-2" fill-rule="evenodd" clip-rule="evenodd" d="M28 18v19l15-8.5V9l-15 9z" fill="#659ACF"/>
+        <path class="notice__icon-path notice__icon-path-4" fill-rule="evenodd" clip-rule="evenodd" d="M21 25L9 18v9l12 7v-9z" fill="#F05A29"/>
+        <path class="notice__icon-path notice__icon-path-4" fill-rule="evenodd" clip-rule="evenodd" d="M37 20l14-8v15.5L37 36V20z" fill="#EEB342"/>
+        <path class="notice__icon-path notice__icon-path-4" fill-rule="evenodd" clip-rule="evenodd" d="M30 27l11-6-.08 13L30 41V27z" fill="#fff"/>
+        <path class="notice__icon-path notice__icon-path-3" fill-rule="evenodd" clip-rule="evenodd" d="M30 34l23-13v22L30 56V34z" fill="#EEB342"/>
+        <path class="notice__icon-path notice__icon-path-3" fill-rule="evenodd" clip-rule="evenodd" d="M7 43V21l23 13v22L7 43z" fill="#F05A29"/>
+        <mask id="a" maskUnits="userSpaceOnUse" x="0" y="21" width="30" height="25">
+          <path d="M0 33l7-12 23 13-7 12L0 33z" fill="#fff"/>
+        </mask>
+        <g class="notice__icon-path notice__icon-path-3" mask="url(#a)">
+          <path d="M0 33l7-12 23 13-7 12L0 33z" fill="#18213F"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 23h30v-1H0v1zm30 2H0v-1h30v1zM0 27h30v-1H0v1zm30 2H0v-1h30v1zM0 31h30v-1H0v1zm30 2H0v-1h30v1zM0 35h30v-1H0v1zm30 2H0v-1h30v1zM0 39h30v-1H0v1zm30 2H0v-1h30v1zM0 43h30v-1H0v1zm0 2h30v-1H0v1z" fill="#EEB342"/>
+        </g>
+        <mask id="b" maskUnits="userSpaceOnUse" x="29" y="21" width="30" height="22">
+          <path d="M36 43l-6-9 23-13 6 9-23 13z" fill="#fff"/>
+        </mask>
+        <g class="notice__icon-path notice__icon-path-3" mask="url(#b)">
+          <path d="M36 43l-6-9 23-13 6 9-23 13z" fill="#18213F"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M30 22h30v-1H30v1zm30 2H30v-1h30v1zm-30 2h30v-1H30v1zm30 2H30v-1h30v1zm-30 2h30v-1H30v1zm30 2H30v-1h30v1zm-30 2h30v-1H30v1zm30 2H30v-1h30v1zm-30 2h30v-1H30v1zm30 2H30v-1h30v1zm0 2H30v-1h30v1z" fill="#EEB342"/>
+        </g>
+        <defs>
+          <linearGradient id="paint0_linear" x1="17.745" y1="60.744" x2="52.514" y2="60.744" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#2090CF"/>
+            <stop offset=".25" stop-color="#2A7BBD" stop-opacity=".89"/>
+            <stop offset=".76" stop-color="#3C5499" stop-opacity=".68"/>
+            <stop offset="1" stop-color="#43448B" stop-opacity=".6"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </span>
+    <span class="notice__title">
+      Профессия «Фронтенд-разработчик»
+      <span class="notice__date">
+        c 2 сентября 2019 по 23 марта 2020
+      </span>
+    </span>
+    <span class="notice__description">
+      <span class="notice__days">
+        До 2 августа цена в рассрочку
+      </span>
+      <span class="notice__sale price price--bold">
+        9&thinsp;250
+        <span class="rouble" title="рублей">
+          <svg aria-hidden="true" width="10" height="10">
+            <use xlink:href="/img/sprites/general.v27.svg#rouble"></use>
+          </svg>
+        </span>
+      </span>
+      / месяц
+    </span>
+    </span>
+  </a>
+  <button class="notice__close" type="button" data-action="hide-banner" data-type="panel" title="Закрыть сообщение на неделю">Закрыть</button>
+  <script>(function(d){var c=d.querySelector('[data-action=hide-banner]');if(c){var b=d.querySelector('.notice');c.addEventListener('click',function(e){e.preventDefault();if(b){b.classList.add('hidden');}var t=new Date();t.setDate(t.getDate()+7);d.cookie='hide-banner-'+c.dataset.type+'=1;expires='+t.toUTCString()+';path=/;secure=true';});}})(document);</script></div>
+<div class="page-content page-content--header">
+  <nav class="secondary-nav secondary-nav--mini secondary-nav--full">
+    <ul class="secondary-nav__list">
+      <li class="secondary-nav__item secondary-nav__item--active">
+        <a class="secondary-nav__item-link" href="courses.html">
+          <span class="secondary-nav__item-icon" aria-hidden="true">
+            <svg aria-hidden="true" width="13" height="10">
+              <use xlink:href="../img/general.svg#all-courses"></use>
+            </svg>
+          </span>
+          Все курсы
+        </a>
+      </li>
+      <li class="secondary-nav__item">
+        <a class="secondary-nav__item-link" href="/program">
+          <span class="secondary-nav__item-icon" aria-hidden="true">
+            <svg aria-hidden="true" width="13" height="10">
+              <use xlink:href="../img/general.svg#program"></use>
+            </svg>
+          </span>
+          Программа обучения
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="page-content__inner">
+    <div class="page-content_col page-content_col--left">
+      <nav class="breadcrumbs" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item" itemprop="name">
+            <a href="../index.html" itemprop="url">
+              Главная
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Интерактивные курсы</h1>
+    </div>
+    <div class="page-content_col page-content_col--right">
+      <p>Начните проходить интерактивные задания прямо сейчас.</p>
+      <a class="button button--green button--full-width" href="/continue">
+        Начать учиться
+      </a>
+    </div>
+  </div>
+</div>
+<div class="module-group-container">
+  <div class="module-group">
+    <div class="module-group__inner">
+      <div class="module-group__left">
+        <p class="module-group__type">Начальный уровень</p>
+        <p class="module-group__info">Если вы ничего не слышали про HTML, CSS и JavaScript — вам сюда.</p>
+      </div>
+      <div class="module-group__right">
+        <section class="module">
+          <a class="module__link" href="basic-html-css.html">
+            <div class="module__icon">
+              <svg class="module__icon-pie module__icon-pie--initial" width="100" height="100" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+              </svg>
+              <img src="https://assets.htmlacademy.ru/img/courses/category_basic-html-css.svg" width="100" height="100" alt=""></div>
+          </a>
+          <a class="module__title-link" href="basic-html-css.html">
+            <h2 class="module__title">Знакомство с HTML и CSS</h2>
+          </a>
+          <p class="module__description">Изучаем основы HTML и CSS. На практике разбираемся с семантической разметкой и базовыми механизмами стилизации на примере небольшого сайта.</p>
+          <div class="module__bottom">
+            <ul class="module__stats">
+              <li>
+                <span class="module__num">
+                  6
+                </span>
+                <span class="module__type">
+                  глав
+                </span>
+              </li>
+              <li>
+                <span class="module__num">
+                  125
+                </span>
+                <span class="module__type">
+                  заданий
+                </span>
+              </li>
+            </ul>
+            <a class="button button--green button--full-width" href="/continue/category/25">
+              Начать курс
+            </a>
+          </div>
+        </section>
+        <section class="module">
+          <a class="module__link" href="/courses/javascript">
+            <div class="module__icon">
+              <svg class="module__icon-pie module__icon-pie--initial" width="100" height="100" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+              </svg>
+              <img src="https://assets.htmlacademy.ru/img/courses/category_javascript.svg" width="100" height="100" alt=""></div>
+          </a>
+          <a class="module__title-link" href="/courses/javascript">
+            <h2 class="module__title">Основы JavaScript</h2>
+          </a>
+          <p class="module__description">Знакомимся с синтаксисом JavaScript, тренируемся использовать базовые концепции и пишем свои первые программы.</p>
+          <div class="module__bottom">
+            <ul class="module__stats">
+              <li>
+                <span class="module__num">
+                  7
+                </span>
+                <span class="module__type">
+                  глав
+                </span>
+              </li>
+              <li>
+                <span class="module__num">
+                  205
+                </span>
+                <span class="module__type">
+                  заданий
+                </span>
+              </li>
+            </ul>
+            <a class="button button--green button--full-width" href="/continue/category/1">
+              Начать курс
+            </a>
+          </div>
+        </section>
+        <section class="module">
+          <a class="module__link" href="/courses/svg">
+            <div class="module__icon">
+              <svg class="module__icon-pie module__icon-pie--initial" width="100" height="100" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+              </svg>
+              <img src="https://assets.htmlacademy.ru/img/courses/category_svg.v2.svg" width="100" height="100" alt=""></div>
+          </a>
+          <a class="module__title-link" href="/courses/svg">
+            <h2 class="module__title">Основы SVG</h2>
+          </a>
+          <p class="module__description">Даёшь векторный веб!</p>
+          <div class="module__bottom">
+            <ul class="module__stats">
+              <li>
+                <span class="module__num">
+                  3
+                </span>
+                <span class="module__type">
+                  главы
+                </span>
+              </li>
+              <li>
+                <span class="module__num">
+                  50
+                </span>
+                <span class="module__type">
+                  заданий
+                </span>
+              </li>
+            </ul>
+            <a class="button button--green button--full-width" href="/continue/category/17">
+              Начать курс
+            </a>
+          </div>
+        </section>
+        <section class="module">
+          <a class="module__link" href="/courses/basic-html">
+            <div class="module__icon">
+              <svg class="module__icon-pie module__icon-pie--initial" width="100" height="100" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+              </svg>
+              <img src="https://assets.htmlacademy.ru/img/courses/category_basic-html.v2.svg" width="100" height="100" alt=""></div>
+          </a>
+          <a class="module__title-link" href="/courses/basic-html">
+            <h2 class="module__title">Основы HTML</h2>
+          </a>
+          <p class="module__description">Изучаем разметку: от простейших текстовых тегов и типовой структуры страницы до сложных форм, видео и аудио.</p>
+          <p class="module__annotation">[Некоторые главы архивные]</p>
+          <div class="module__bottom">
+            <ul class="module__stats">
+              <li>
+                <span class="module__num">
+                  8
+                </span>
+                <span class="module__type">
+                  глав
+                </span>
+              </li>
+              <li>
+                <span class="module__num">
+                  146
+                </span>
+                <span class="module__type">
+                  заданий
+                </span>
+              </li>
+            </ul>
+            <a class="button button--green button--full-width" href="/continue/category/5">
+              Начать курс
+            </a>
+          </div>
+        </section>
+        <section class="module">
+          <a class="module__link" href="/courses/basic-css">
+            <div class="module__icon">
+              <svg class="module__icon-pie module__icon-pie--initial" width="100" height="100" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+              </svg>
+              <img src="https://assets.htmlacademy.ru/img/courses/category_basic-css.v2.svg" width="100" height="100" alt=""></div>
+          </a>
+          <a class="module__title-link" href="/courses/basic-css">
+            <h2 class="module__title">Основы CSS</h2>
+          </a>
+          <p class="module__description">Знакомимся с синтаксисом CSS, тренируемся использовать селекторы, каскадность и наследование.</p>
+          <p class="module__annotation">[Некоторые главы архивные]</p>
+          <div class="module__bottom">
+            <ul class="module__stats">
+              <li>
+                <span class="module__num">
+                  5
+                </span>
+                <span class="module__type">
+                  глав
+                </span>
+              </li>
+              <li>
+                <span class="module__num">
+                  89
+                </span>
+                <span class="module__type">
+                  заданий
+                </span>
+              </li>
+            </ul>
+            <a class="button button--green button--full-width" href="/continue/category/7">
+              Начать курс
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="module-group">
+    <div class="module-group__inner">
+      <div class="module-group__left">
+        <p class="module-group__type">Средний уровень</p>
+        <p class="module-group__info">Знаете основы и хотите решать прикладные задачи? Это ваш уровень!</p>
+      </div>
+      <div class="module-group__right">
+        <section class="module">
+          <a class="module__link" href="/courses/layout">
+            <div class="module__icon">
+              <svg class="module__icon-pie module__icon-pie--initial" width="100" height="100" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+              </svg>
+              <img src="https://assets.htmlacademy.ru/img/courses/category_layout.v2.svg" width="100" height="100" alt=""></div>
+          </a>
+          <a class="module__title-link" href="/courses/layout">
+            <h2 class="module__title">Построение сеток</h2>
+          </a>
+          <p class="module__description">«Сетка» или «раскладка» — это расположение крупных блоков страницы. Проще говоря, учимся строить колонки.</p>
+          <div class="module__bottom">
+            <ul class="module__stats">
+              <li>
+                <span class="module__num">
+                  6
+                </span>
+                <span class="module__type">
+                  глав
+                </span>
+              </li>
+              <li>
+                <span class="module__num">
+                  162
+                </span>
+                <span class="module__type">
+                  задания
+                </span>
+              </li>
+            </ul>
+            <a class="button button--green button--full-width" href="/continue/category/9">
+              Начать курс
+            </a>
+          </div>
+        </section>
+        <section class="module">
+          <a class="module__link" href="/courses/decoration">
+            <div class="module__icon">
+              <svg class="module__icon-pie module__icon-pie--initial" width="100" height="100" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+              </svg>
+              <img src="https://assets.htmlacademy.ru/img/courses/category_decoration.v2.svg" width="100" height="100" alt=""></div>
+          </a>
+          <a class="module__title-link" href="/courses/decoration">
+            <h2 class="module__title">Декоративные эффекты</h2>
+          </a>
+          <p class="module__description">Интерфейсы должны быть красивыми! И для этого в CSS море возможностей.</p>
+          <div class="module__bottom">
+            <ul class="module__stats">
+              <li>
+                <span class="module__num">
+                  7
+                </span>
+                <span class="module__type">
+                  глав
+                </span>
+              </li>
+              <li>
+                <span class="module__num">
+                  148
+                </span>
+                <span class="module__type">
+                  заданий
+                </span>
+              </li>
+            </ul>
+            <a class="button button--green button--full-width" href="/continue/category/11">
+              Начать курс
+            </a>
+          </div>
+        </section>
+        <section class="module">
+          <a class="module__link" href="/courses/content">
+            <div class="module__icon">
+              <svg class="module__icon-pie module__icon-pie--initial" width="100" height="100" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+              </svg>
+              <img src="https://assets.htmlacademy.ru/img/courses/category_content.v2.svg" width="100" height="100" alt=""></div>
+          </a>
+          <a class="module__title-link" href="/courses/content">
+            <h2 class="module__title">Оформление текста</h2>
+          </a>
+          <p class="module__description">Самое главное в вебе — это текст. А что может быть лучше хорошо оформленного текста?</p>
+          <p class="module__annotation">[Некоторые главы архивные]</p>
+          <div class="module__bottom">
+            <ul class="module__stats">
+              <li>
+                <span class="module__num">
+                  2
+                </span>
+                <span class="module__type">
+                  главы
+                </span>
+              </li>
+              <li>
+                <span class="module__num">
+                  42
+                </span>
+                <span class="module__type">
+                  задания
+                </span>
+              </li>
+            </ul>
+            <a class="button button--green button--full-width" href="/continue/category/13">
+              Начать курс
+            </a>
+          </div>
+        </section>
+        <section class="module">
+          <a class="module__link" href="/courses/workshop">
+            <div class="module__icon">
+              <svg class="module__icon-pie module__icon-pie--initial" width="100" height="100" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+              </svg>
+              <img src="https://assets.htmlacademy.ru/img/courses/category_workshop.v2.svg" width="100" height="100" alt=""></div>
+          </a>
+          <a class="module__title-link" href="/courses/workshop">
+            <h2 class="module__title">Мастерские</h2>
+          </a>
+          <p class="module__description">Применяем полученные знания для создания типовых блоков сайтов и сложных элементов интерфейса.</p>
+          <div class="module__bottom">
+            <ul class="module__stats">
+              <li>
+                <span class="module__num">
+                  3
+                </span>
+                <span class="module__type">
+                  главы
+                </span>
+              </li>
+              <li>
+                <span class="module__num">
+                  77
+                </span>
+                <span class="module__type">
+                  заданий
+                </span>
+              </li>
+            </ul>
+            <a class="button button--green button--full-width" href="/continue/category/15">
+              Начать курс
+            </a>
+          </div>
+        </section>
+        <section class="module">
+          <a class="module__link" href="/courses/javascript-in-browser">
+            <div class="module__icon">
+              <svg class="module__icon-pie module__icon-pie--initial" width="100" height="100" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+              </svg>
+              <img src="https://assets.htmlacademy.ru/img/courses/category_javascript-browser.svg" width="100" height="100" alt=""></div>
+          </a>
+          <a class="module__title-link" href="/courses/javascript-in-browser">
+            <h2 class="module__title">JavaScript в браузере</h2>
+          </a>
+          <p class="module__description">Учимся взаимодействовать с пользователями, общаемся с сервером и оживляем интерфейсы.</p>
+          <div class="module__bottom">
+            <ul class="module__stats">
+              <li>
+                <span class="module__num">
+                  2
+                </span>
+                <span class="module__type">
+                  главы
+                </span>
+              </li>
+              <li>
+                <span class="module__num">
+                  45
+                </span>
+                <span class="module__type">
+                  заданий
+                </span>
+              </li>
+            </ul>
+            <a class="button button--green button--full-width" href="/continue/category/3">
+              Начать курс
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div class="module-group">
+    <div class="module-group__inner">
+      <div class="module-group__left">
+        <p class="module-group__type">Продвинутый уровень</p>
+        <p class="module-group__info">Уже хорошо решаете прикладные задачи? Тогда пора повышать уровень.</p>
+      </div>
+      <div class="module-group__right">
+        <section class="module">
+          <a class="module__link" href="/courses/dynamic">
+            <div class="module__icon">
+              <svg class="module__icon-pie module__icon-pie--initial" width="100" height="100" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+              </svg>
+              <img src="https://assets.htmlacademy.ru/img/courses/category_dynamic.v2.svg" width="100" height="100" alt=""></div>
+          </a>
+          <a class="module__title-link" href="/courses/dynamic">
+            <h2 class="module__title">Динамические эффекты</h2>
+          </a>
+          <p class="module__description">Оживляем элементы интерфейса с помощью анимации и трансформаций.</p>
+          <div class="module__bottom">
+            <ul class="module__stats">
+              <li>
+                <span class="module__num">
+                  3
+                </span>
+                <span class="module__type">
+                  главы
+                </span>
+              </li>
+              <li>
+                <span class="module__num">
+                  92
+                </span>
+                <span class="module__type">
+                  задания
+                </span>
+              </li>
+            </ul>
+            <a class="button button--green button--full-width" href="/continue/category/19">
+              Начать курс
+            </a>
+          </div>
+        </section>
+        <section class="module">
+          <a class="module__link" href="/courses/less">
+            <div class="module__icon">
+              <svg class="module__icon-pie module__icon-pie--initial" width="100" height="100" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+              </svg>
+              <img src="https://assets.htmlacademy.ru/img/courses/category_less.v2.svg" width="100" height="100" alt=""></div>
+          </a>
+          <a class="module__title-link" href="/courses/less">
+            <h2 class="module__title">Препроцессор Less</h2>
+          </a>
+          <p class="module__description">Знакомимся с инструментами ускорения вёрстки.</p>
+          <div class="module__bottom">
+            <ul class="module__stats">
+              <li>
+                <span class="module__num">
+                  2
+                </span>
+                <span class="module__type">
+                  главы
+                </span>
+              </li>
+              <li>
+                <span class="module__num">
+                  44
+                </span>
+                <span class="module__type">
+                  задания
+                </span>
+              </li>
+            </ul>
+            <a class="button button--green button--full-width" href="/continue/category/21">
+              Начать курс
+            </a>
+          </div>
+        </section>
+        <section class="module">
+          <a class="module__link" href="/courses/keksby">
+            <div class="module__icon">
+              <svg class="module__icon-pie module__icon-pie--initial" width="100" height="100" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+                <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+              </svg>
+              <img src="https://assets.htmlacademy.ru/img/courses/category_keksby.v2.svg" width="100" height="100" alt=""></div>
+          </a>
+          <a class="module__title-link" href="/courses/keksby">
+            <h2 class="module__title">Великий Кексби</h2>
+          </a>
+          <p class="module__description">Помогаем Кексу запустить магазин кошачьих аксессуаров и фэшена.</p>
+          <div class="module__bottom">
+            <ul class="module__stats">
+              <li>
+                <span class="module__num">
+                  12
+                </span>
+                <span class="module__type">
+                  глав
+                </span>
+              </li>
+              <li>
+                <span class="module__num">
+                  158
+                </span>
+                <span class="module__type">
+                  заданий
+                </span>
+              </li>
+            </ul>
+            <a class="button button--green button--full-width" href="/continue/category/23">
+              Начать курс
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="page-footer">
+  <div class="page-footer__inner">
+    <div class="page-footer__social">
+      <a class="page-footer__logo" href="/" rel="home" aria-label="На главную HTML Academy">
+        <img src="https://assets.htmlacademy.ru/img/logo.v2.svg" width="161" height="55" alt="Логотип HTML Academy">
+      </a>
+      <ul class="social-links social-links--contrast social-links--gutters page-footer__social-links">
+        <li>
+          <a class="social-links__link" href="https://vk.com/htmlacademy" target="_blank" rel="noopener nofollow" title="Наш Вконтакте">
+            <span class="sr-only">
+              Наша группа в ВК
+            </span>
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-links__link" href="https://www.facebook.com/htmlacademy" target="_blank" rel="noopener nofollow" title="Наш Фейсбук">
+            <span class="sr-only">
+              Наша группа в Facebook
+            </span>
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-links__link" href="https://www.youtube.com/user/htmlacademyru" rel="noopener nofollow" target="_blank" title="Наш канал на YouTube">
+            <span class="sr-only">
+              Наш канал на Youtube
+            </span>
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-links__link" href="https://twitter.com/htmlacademy_ru" target="_blank" rel="noopener nofollow" title="Наш Твитер">
+            <span class="sr-only">
+              Наша страница в Twitter
+            </span>
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-links__link" href="https://www.instagram.com/htmlacademy/" rel="noopener nofollow" target="_blank" title="Наш Инстаграм">
+            <span class="sr-only">
+              Наша страница в Instagram
+            </span>
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__block-group" role="navigation" aria-label="Дополнительное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <div class="page-footer__item page-footer__item--courses-professions">
+        <div class="page-footer__sub-item">
+          <h3 class="page-footer__header">Курсы</h3>
+          <ul class="page-footer__list">
+            <li itemprop="name">
+              <a href="/courses" itemprop="url">
+                Интерактивные курсы
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/pricing" itemprop="url">
+                Подписка
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__sub-item">
+          <h3 class="page-footer__header">Профессии</h3>
+          <ul class="page-footer__list">
+            <li itemprop="name">
+              <a href="/profession/frontender" itemprop="url">
+                Фронтенд-разработчик
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/profession/react" itemprop="url">
+                React-разработчик
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__item page-footer__item--intensives">
+        <a class="page-footer__header" href="/intensive">
+          Интенсивы
+        </a>
+        <ul class="page-footer__list">
+          <li itemprop="name">
+            <a href="/intensive/htmlcss" itemprop="url">
+              HTML и CSS,<br>
+              уровень 1
+            </a>
+          </li>
+          <li itemprop="name">
+            <a href="/intensive/adaptive" itemprop="url">
+              HTML и CSS,<br>
+              уровень 2
+            </a>
+          </li>
+          <li itemprop="name">
+            <a href="/intensive/javascript" itemprop="url">
+              JavaScript,<br>
+              уровень 1
+            </a>
+          </li>
+          <li itemprop="name">
+            <a href="/intensive/ecmascript" itemprop="url">
+              JavaScript,<br>
+              уровень 2
+            </a>
+          </li>
+          <li itemprop="name">
+            <a href="/intensive/react" itemprop="url">
+              JavaScript,<br>
+              уровень 3
+            </a>
+          </li>
+          <li itemprop="name">
+            <a href="/intensive/php" itemprop="url">
+              PHP, уровень 1
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__item page-footer__item--information-blog">
+        <div class="page-footer__sub-item">
+          <a class="page-footer__header" href="/blog">
+            Блог
+          </a>
+          <ul class="page-footer__list">
+            <li itemprop="name">
+              <a href="/blog/useful" itemprop="url">
+                Полезные статьи
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/blog/video/shorts" itemprop="url">
+                HTML Шорты
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/blog/career" itemprop="url">
+                Карьера выпускников
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/blog/education" itemprop="url">
+                Обучение у нас
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__sub-item">
+          <h3 class="page-footer__header">Информация</h3>
+          <ul class="page-footer__list">
+            <li itemprop="name">
+              <a href="/about" itemprop="url">
+                Об Академии
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/hr" itemprop="url">
+                Вакансии
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="https://career.htmlacademy.ru/about" itemprop="url">
+                О центре карьеры
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="https://nexus.htmlacademy.ru" itemprop="url">
+                База выпускников
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__item page-footer__item--services-others">
+        <div class="page-footer__sub-item">
+          <h3 class="page-footer__header">Услуги</h3>
+          <ul class="page-footer__list">
+            <li itemprop="name">
+              <a href="/tutors" itemprop="url">
+                Для наставников
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/for_schools" itemprop="url">
+                Для учителей
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__sub-item">
+          <h3 class="page-footer__header">Остальное</h3>
+          <ul class="page-footer__list">
+            <li itemprop="name">
+              <a href="/contacts" itemprop="url">
+                Написать нам
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/events" itemprop="url">
+                Мероприятия
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="http://forum.academy" itemprop="url">
+                Форум
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="https://liga-a.ru/" itemprop="url">
+                Лига А.
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="page-footer__bottom" role="contentinfo">
+      <span class="page-footer__bottom-links">
+        <a href="/docs/agreement">
+          Соглашение
+        </a>
+        <a href="/docs/privacy">
+          Конфиденциальность
+        </a>
+        <a href="/docs/edu">
+          Сведения об образовательной организации
+        </a>
+        <a href="/docs/license">
+          Лицензия № 3026
+        </a>
+      </span>
+      <span class="page-footer__copyright">
+        © ООО «Интерактивные обучающие технологии», 2013−2019
+      </span>
+      <span class="page-footer__way-of-love">
+        <a href="https://github.com/htmlacademy" target="_blank" rel="noopener nofollow" aria-label="Наш профиль на Github">
+          <img src="https://assets.htmlacademy.ru/img/icons/icon_with-love.v2.svg" width="91" height="16" alt="Сделано с любовью в Санкт-Петербурге" title="Сделано с любовью в Санкт-Петербурге">
+        </a>
+      </span>
+    </p>
+  </div>
+</footer>
+<div class="modal">
+  <div class="modal__inner">
+    <div class="modal__wrapper js-login hidden">
+      <button class="modal__close icon-close" type="button" title="Закрыть" data-modal="close" data-value="login"></button>
+      <h4 class="modal__header">Вход</h4>
+      <ul class="modal__social modal__social--three">
+        <li class="modal__social-vk">
+          <a href="/login/vk?init=1&amp;redirect_url=https://htmlacademy.ru/courses" rel="nofollow" title="Войти через Вконтакте">
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal__social-fb">
+          <a href="/login/fb?init=1&amp;redirect_url=https://htmlacademy.ru/courses" rel="nofollow" title="Войти через Фейсбук">
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal__social-google">
+          <a href="/login/google?init=1&amp;redirect_url=https://htmlacademy.ru/courses" rel="nofollow" title="Войти через Google">
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#google"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="modal__or">
+        <span>
+          или
+        </span>
+      </div>
+      <form class="modal__form form" action="/login?redirect_url=https://htmlacademy.ru/courses" autocomplete="off" method="post" data-submit="o">
+        <input type="hidden" name="ha_name" value="ha5d39e0f748cca">
+        <input type="hidden" name="ha_value" value="d853a8d0b67df86dffdbd4dd6b27514a">
+        <div class="form__group">
+          <label class="sr-only" for="login-email">Эл. почта</label>
+          <div class="form__group-fields">
+            <input class="field field--text field--full-width" type="email" name="email" value="" id="login-email" required placeholder="Эл. почта" data-email-suggest="on">
+          </div>
+        </div>
+        <div class="form__group">
+          <label class="sr-only" for="login-password">Пароль</label>
+          <div class="form__group-fields">
+            <input class="field field--text field--full-width ym-disable-keys" type="password" name="password" value="" id="login-password" required placeholder="Пароль">
+          </div>
+        </div>
+        <input class="button button--full-width" type="submit" data-submit-text="Вхожу…" value="Войти">
+      </form>
+      <p class="modal__forgot-password">
+        <a href="/recover?redirect_url=https://htmlacademy.ru/courses" data-modal="open" data-value="recover">
+          Забыли пароль?
+        </a>
+      </p>
+      <a class="modal__bottom-link" href="/signup?redirect_url=https://htmlacademy.ru/courses" data-modal="open" data-value="register">
+        Регистрация
+      </a>
+    </div>
+    <div class="modal__wrapper js-register hidden">
+      <button class="modal__close icon-close" type="button" title="Закрыть" data-modal="close" data-value="register"></button>
+      <h4 class="modal__header">Регистрация</h4>
+      <ul class="modal__social modal__social--three">
+        <li class="modal__social-vk">
+          <a href="/login/vk?init=1&amp;redirect_url=https://htmlacademy.ru/courses" rel="nofollow" title="Зарегистрироваться через Вконтакте">
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal__social-fb">
+          <a href="/login/fb?init=1&amp;redirect_url=https://htmlacademy.ru/courses" rel="nofollow" title="Зарегистрироваться через Фейсбук">
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal__social-google">
+          <a href="/login/google?init=1&amp;redirect_url=https://htmlacademy.ru/courses" rel="nofollow" title="Зарегистрироваться через Google">
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#google"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="modal__or">
+        <span>
+          или
+        </span>
+      </div>
+      <form class="modal__form form" action="/signup?redirect_url=https://htmlacademy.ru/courses" autocomplete="off" method="post" data-submit="o">
+        <input type="hidden" name="ha_name" value="ha5d39e0f748cca">
+        <input type="hidden" name="ha_value" value="d853a8d0b67df86dffdbd4dd6b27514a">
+        <div class="form__group">
+          <label class="sr-only" for="registration-email">Эл. почта</label>
+          <input class="field field--text field--full-width" type="email" name="email" placeholder="Эл. почта" value="" id="registration-email" data-email-suggest="on">
+        </div>
+        <div class="form__group">
+          <label class="sr-only" for="registration-password">Пароль</label>
+          <input class="field field--text field--full-width ym-disable-keys" type="password" name="password" placeholder="Пароль" id="registration-password">
+        </div>
+        <input class="button button--full-width" type="submit" data-submit-text="Регистрирую…" value="Зарегистрироваться">
+      </form>
+      <p class="modal__text">Нажимая кнопку «Зарегистрироваться», вы даёте своё согласие на обработку персональных данных в соответствии с «
+        <a href="/docs/privacy" target="_blank">
+          Политикой конфиденциальности
+        </a>
+        » и соглашаетесь с «
+        <a href="/docs/agreement" target="_blank">
+          Условиями оказания услуг
+        </a>
+        ».</p>
+      <a class="modal__bottom-link" href="/login?redirect_url=https://htmlacademy.ru/courses" data-modal="open" data-value="login">
+        Вход
+      </a>
+    </div>
+    <div class="modal__wrapper modal__wrapper--no-btn-bottom js-recover hidden">
+      <button class="modal__close icon-close" type="button" title="Закрыть" data-modal="close" data-value="recover"></button>
+      <h4 class="modal__header">Восстановление доступа</h4>
+      <p class="modal__text-accent">Забыли пароль или потеряли доступ к профилю? Введите привязанную к профилю эл. почту, мы отправим вам письмо со ссылкой для восстановления.</p>
+      <form class="modal__form form" action="/recover?redirect_url=https://htmlacademy.ru/courses" autocomplete="off" method="post" data-submit="o">
+        <input type="hidden" name="ha_name" value="ha5d39e0f748cca">
+        <input type="hidden" name="ha_value" value="d853a8d0b67df86dffdbd4dd6b27514a">
+        <div class="form__group">
+          <label class="form__label" for="recover-email">Эл. почта</label>
+          <div class="form__group-fields">
+            <input class="field field--text field--full-width" type="email" name="email" value="" id="recover-email" required placeholder="Эл. почта" data-email-suggest="on">
+          </div>
+        </div>
+        <input class="button button--full-width" type="submit" data-submit-text="Отправляю…" value="Отправить">
+      </form>
+      <p class="modal__text">Забыли привязать эл. почту к профилю?
+        <a href="/contacts">
+          Напишите нам
+        </a>
+        , мы поможем.</p>
+    </div>
+  </div>
+</div>
+<script async src="https://assets.htmlacademy.ru/js/general.v66.js" data-assets="https://assets.htmlacademy.ru" data-require="modal,form,mailcheck"></script><script>(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-173652-9L5mW';</script>
+</body>
+</html>

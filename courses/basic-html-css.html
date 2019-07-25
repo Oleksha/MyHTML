@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script>var b=document.documentElement.classList;b.remove('no-js');if(!window.Promise||!window.sessionStorage||!!sessionStorage.getItem('muller.v2')){b.add('muller')}</script><script>dataLayer=[];</script><script>(function(w,d,s,l,i){ w[l]=w[l]||[];w[l].push({ 'gtm.start':new Date().getTime(),event:'gtm.js' });var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-MM92BM');</script>
+<!--<link rel="dns-prefetch" href="https://assets.htmlacademy.ru">-->
+<link rel="stylesheet" href="../css/style.core.css">
+<link rel="stylesheet" href="../css/style.text.css">
+<link rel="stylesheet" href="../css/style.profile.css">
+<link rel="preload" as="script" href="../js/general.js">
+<title>Курс «Знакомство с HTML и CSS» — HTML Academy</title>
+<meta name="theme-color" content="#2f358f">
+<link rel="mask-icon" href="/favicon.svg" color="#2f358f">
+<link rel="manifest" href="/htmlacademy.webmanifest">
+<meta name="application-name" content="HTML Academy">
+<meta name="apple-mobile-web-app-title" content="HTML Academy">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@htmlacademy_ru">
+<meta property="fb:app_id" content="144426935714125">
+<meta property="og:site_name" content="HTML Academy">
+<meta property="og:type" content="htmlacademy:course">
+<meta name="twitter:url" property="og:url" content="https://htmlacademy.ru/courses/basic-html-css">
+<meta name="twitter:title" property="og:title" content="Знакомство с HTML и CSS">
+<meta name="twitter:description" property="og:description" content="Изучаем основы HTML и CSS. На практике разбираемся с семантической разметкой и базовыми механизмами стилизации на примере небольшого сайта.">
+<meta name="twitter:image" property="og:image" content="https://assets.htmlacademy.ru/og/course/basic-html-css.png">
+<meta name="vk:image" property="og:image" content="https://assets.htmlacademy.ru/og/course/vk-basic-html-css.png">
+<meta name="yandex-tableau-widget" content="logo=https://assets.htmlacademy.ru/img/logo--tableau.png,color=#ee5b33">
+<meta name="format-detection" content="telephone=no">
+</head>
+<body>
+<noscript>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MM92BM" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<header class="page-header">
+  <div class="page-header__inner">
+    <div class="page-header__top">
+      <a class="page-header__logo" href="/" aria-label="На главную HTML Academy">
+        <img src="https://assets.htmlacademy.ru/img/logo.v2.svg" width="104" height="36" alt="HTML Academy">
+      </a>
+      <nav class="main-nav" aria-label="Основное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <ul class="main-nav__list main-nav__list--main main-nav__list--adaptive">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="/courses">
+              <span class="main-nav__icon">
+              <svg aria-hidden="true" width="16" height="16">
+                <use xlink:href="../img/general.svg#course"></use>
+              </svg>
+              </span>Курсы
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="/profession/frontender">
+              <span class="main-nav__icon">
+              <svg aria-hidden="true" width="16" height="16">
+                <use xlink:href="../img/general.svg#hat"></use>
+              </svg>
+              </span>Профессия
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="/intensive">
+              <span class="main-nav__icon">
+              <svg aria-hidden="true" width="16" height="16">
+                <use xlink:href="../img/general.svg#intensive"></use>
+              </svg>
+              </span>Интенсивы
+            </a>
+          </li>
+        </ul>
+        <button class="main-nav__trigger" type="button" title="Главное меню"><span></span></button>
+        <div class="main-nav__dropdown" id="main-menu">
+          <div class="main-nav__dropdown-inner">
+            <ul class="main-nav__list main-nav__list--main">
+              <li class="main-nav__item main-nav__item--active" itemprop="name">
+                <a class="main-nav__link" href="courses.html" itemprop="url">
+                  <span class="main-nav__icon" aria-hidden="true">
+                  <svg aria-hidden="true" width="16" height="16">
+                    <use xlink:href="../img/general.svg#course"></use>
+                  </svg>
+                  </span>Курсы
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--dropdown" itemprop="name">
+                <span class="main-nav__link" title="Профессии"><span class="main-nav__icon">
+                <svg aria-hidden="true" width="16" height="16">
+                  <use xlink:href="../img/general.svg#hat"></use>
+                </svg>
+                </span>Профессии</span>
+                <ul class="main-nav__list main-nav__list--lvl2">
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/profession/frontender">
+                      Фронтенд-разработчик
+                    </a>
+                  </li>
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/profession/react">
+                      React-разработчик
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item main-nav__item--dropdown" itemprop="name">
+                <a class="main-nav__link" href="/intensive" itemprop="url">
+                  <span class="main-nav__icon" aria-hidden="true">
+                  <svg aria-hidden="true" width="16" height="16">
+                    <use xlink:href="../img/general.svg#intensive"></use>
+                  </svg>
+                  </span>Интенсивы
+                </a>
+                <ul class="main-nav__list main-nav__list--lvl2">
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/intensive/htmlcss" itemprop="url">
+                      HTML и CSS, уровень 1
+                    </a>
+                  </li>
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/intensive/adaptive" itemprop="url">
+                      HTML и CSS, уровень 2
+                    </a>
+                  </li>
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/intensive/javascript" itemprop="url">
+                      JavaScript, уровень 1
+                    </a>
+                  </li>
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/intensive/ecmascript" itemprop="url">
+                      JavaScript, уровень 2
+                    </a>
+                  </li>
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/intensive/react" itemprop="url">
+                      JavaScript, уровень 3
+                    </a>
+                  </li>
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/intensive/nodejs" itemprop="url">
+                      Node.js, уровень 1
+                    </a>
+                  </li>
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/intensive/php" itemprop="url">
+                      PHP, уровень 1
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="main-nav__list main-nav__list--user">
+              <li class="main-nav__item" itemprop="name">
+                <a class="main-nav__link" href="/signup?redirect_url=https://htmlacademy.ru/courses/basic-html-css" title="Регистрация" data-modal="open" data-value="register" itemprop="url">
+                  <span class="main-nav__icon" aria-hidden="true">
+                  <svg aria-hidden="true" width="16" height="16">
+                    <use xlink:href="../img/general.svg#user"></use>
+                  </svg>
+                  </span>Регистрация
+                </a>
+              </li>
+              <li class="main-nav__item main-nav__item--login" itemprop="name">
+                <a class="main-nav__link" href="/login?redirect_url=https://htmlacademy.ru/courses/basic-html-css" title="Войти" data-modal="open" data-value="login" itemprop="url">
+                  <span class="main-nav__icon" aria-hidden="true">
+                  <svg aria-hidden="true" width="16" height="16">
+                    <use xlink:href="../img/general.svg#login"></use>
+                  </svg>
+                  </span>Войти
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<div class="notice notice--with-icon ">
+  <a class="notice__link gtm-notice-adaptive" href="/intensive/adaptive">
+    <span>
+    <svg width="70" height="65" viewBox="0 0 80 58" class="notice__icon notice__icon--type-2" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" fill-rule="nonzero" transform="matrix(1, 0, 0, 1, 12, 0)">
+        <path class="notice__icon-path notice__icon-path-1" fill="#F05A2D" d="M24.5 28.1l25.6 14.8v9.6L24.5 37.7z"/>
+        <path class="notice__icon-path notice__icon-path-2" fill="#FFF" d="M33.5 17.3l25.6 14.9v14.9L33.5 32.2z"/>
+        <path class="notice__icon-path notice__icon-path-3" fill="#DADCDA" d="M15.1 28.3l25.6 14.8V58L15.1 43.2z" opacity=".57"/>
+        <path class="notice__icon-path notice__icon-path-4" fill="#FFF" d="M0 26.2L25.6 41v14.9L0 41.2z"/>
+        <path class="notice__icon-path notice__icon-path-5" fill="#F05A2D" d="M24.5 14.3l25.6 14.8v9.6L24.5 24zM24.5 0l25.6 14.8v9.6L24.5 9.6z"/>
+      </g>
+    </svg>
+    </span><span class="notice__title"> Профессиональный HTML и CSS, уровень 2 <span class="notice__date">c 4 ноября 2019 по 14 января 2020</span></span><span class="notice__description"><span class="notice__days">Только 3 дня цена </span><span class="notice__sale price price--bold">17&thinsp;500 <span class="rouble" title="рублей">
+    <svg aria-hidden="true" width="10" height="10">
+      <use xlink:href="/img/sprites/general.v27.svg#rouble"></use>
+    </svg>
+    </span></span><span class="notice__price price price--line-through">20&thinsp;900 <span class="rouble" title="рублей">
+    <svg aria-hidden="true" width="10" height="10">
+      <use xlink:href="/img/sprites/general.v27.svg#rouble"></use>
+    </svg>
+    </span></span></span>
+  </a>
+  <button class="notice__close" type="button" data-action="hide-banner" data-type="panel" title="Закрыть сообщение на неделю">Закрыть</button>
+  <script>(function(d){var c=d.querySelector('[data-action=hide-banner]');if(c){var b=d.querySelector('.notice');c.addEventListener('click',function(e){e.preventDefault();if(b){b.classList.add('hidden');}var t=new Date();t.setDate(t.getDate()+7);d.cookie='hide-banner-'+c.dataset.type+'=1;expires='+t.toUTCString()+';path=/;secure=true';});}})(document);</script></div>
+<section class="train train--theory">
+  <header class="train-header">
+    <div class="train-header__container">
+      <div class="train-header__content">
+        <nav class="breadcrumbs train-header__breadcrumbs" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item" itemprop="name">
+              <a href="../index.html" itemprop="url">
+                Главная
+              </a>
+            </li>
+            <li class="breadcrumbs__item" itemprop="name">
+              <a href="courses.html" itemprop="url">
+                Интерактивные курсы
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="train-header__title">Знакомство с HTML и CSS</h1>
+        <span class="train-header__time">5 часов 40 минут теории, 3 часа 20 минут практики</span><span class="train-header__time train-header__time--calendar">Это примерно 5 дней по 2 часа в день</span>
+        <ul class="train-header__stats train-header__stats--theory">
+          <li>
+            <span class="train-header__stat-num">6</span> глав<span class="train-header__comma">,</span>
+          </li>
+          <li>
+            <span class="train-header__stat-num">95</span>  заданий<span class="train-header__comma">, </span>
+          </li>
+          <li>
+            <span class="train-header__stat-num">5</span> испытаний
+          </li>
+        </ul>
+        <ul class="train-header__stats train-header__stats--practice">
+          <li>
+            <span class="train-header__stat-num">25</span>вызовов
+          </li>
+        </ul>
+        <div class="train-header__text">Изучаем основы HTML и CSS. На практике разбираемся с семантической разметкой и базовыми механизмами стилизации на примере небольшого сайта.</div>
+        <a class="train-header__button button button--green button--large button--wide" href="/continue/category/25">
+          Начать курс
+        </a>
+      </div>
+      <div class="train-header__col train-header__col--theory"  data-content="theory"><span class="train-header__image"><img src="https://assets.htmlacademy.ru/img/courses/category_basic-html-css.svg" width="82" height="81" alt="Курс «Знакомство с HTML и CSS»"></span>
+        <h2 class="train-header__subtitle">Теория</h2>
+        <button class="train-header__on button" type="button">Включить режим</button>
+        <p class="train-header__info">Обязательный для прохождения материал, теория, задания и испытания.</p>
+        <p class="train-header__stats"><span class="train-header__stat-num">6</span> глав<span class="train-header__comma">, </span><span class="train-header__stat-num">95</span> заданий<span class="train-header__comma">, </span><span class="train-header__stat-num">5</span> испытаний </p>
+      </div>
+      <div class="train-header__col train-header__col--practice"  data-content="practice"><span class="train-header__image">
+        <svg aria-hidden="true" width="55" height="44">
+          <use xlink:href="/img/sprites/general.v27.svg#knuckle"></use>
+        </svg>
+        </span>
+        <h2 class="train-header__subtitle rouble-mark">Практика</h2>
+        <button class="train-header__on button" type="button">Включить режим</button>
+        <p class="train-header__info">Необязательные, но очень полезные задания. Доступны только по 
+          <a class="link link--green" href="/pricing">
+            подписке
+          </a>
+          .</p>
+        <p class="train-header__stats"><span class="train-header__stat-num">25</span> вызовов </p>
+      </div>
+    </div>
+  </header>
+  <section class="chapter" id="part297">
+    <div class="chapter__container">
+      <div class="chapter__controls">
+        <button class="chapter__control chapter__control--current" type="button" data-toggle-part="left"><span>Теория</span><span class="chapter__control-num">0/12</span></button>
+        <button class="chapter__control" type="button" data-toggle-part="right"><span>Практика</span><span class="chapter__control-num">0/4</span></button>
+      </div>
+      <div class="chapter__wagon chapter__wagon--left chapter__display">
+        <div class="chapter__col chapter__col--theory">
+          <div class="chapter__progress chapter__progress--empty">
+            <svg class="chapter__progress-pie" width="60" height="60" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+              <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+            </svg>
+            <span class="chapter__num">0/12</span></div>
+          <p class="chapter__stats"><span class="chapter__stat">12 заданий</span></p>
+          <button class="chapter__on button button--transparent" type="button">Посмотреть</button>
+        </div>
+        <div class="chapter__content">
+          <div class="chapter__part chapter__part--theory">
+            <div class="chapter__wrap">
+              <div class="chapter__wrap-left">
+                <div class="chapter__title-wrap">
+                  <div class="chapter__title-image"><img src="https://assets.htmlacademy.ru/img/achievements/courses/basic-html-css/297.svg" width="66" height="50" alt=""></div>
+                  <div>
+                    <h2 class="chapter__title">
+                      <a href="/courses/297">
+                        <span>Глава 1:</span> Знакомство с HTML и CSS
+                      </a>
+                    </h2>
+                    <span class="chapter__time">40 минут теории , 20 минут практики</span></div>
+                </div>
+                <p class="chapter__text">В этой главе вы под руководством инструктора Кекса познакомитесь с основами вёрстки на примере небольшого лендинга.</p>
+              </div>
+            </div>
+            <a class="chapter__continue button" href="/continue/course/297">
+              Начать
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="chapter__wagon chapter__wagon--right">
+        <div class="chapter__col chapter__col--practice">
+          <p class="chapter__stats"><span class="chapter__stat"> 4 вызова </span></p>
+          <button class="chapter__on button button--transparent" type="button">Посмотреть</button>
+        </div>
+        <div class="chapter__content">
+          <div class="chapter__part chapter__part--practice">
+            <div class="chapter__title-wrap">
+              <div class="chapter__title-image"><img src="https://assets.htmlacademy.ru/img/achievements/courses/basic-html-css/297.svg" width="66" height="50" alt=""></div>
+              <div>
+                <h2 class="chapter__title">
+                  <a href="/courses/297/practice">
+                    <span>Глава 1:</span> Знакомство с HTML и CSS
+                  </a>
+                </h2>
+                <span class="chapter__time">40 минут теории , 20 минут практики</span></div>
+            </div>
+            <div class="chapter-tasks chapter-tasks--min">
+              <div class="chapter-tasks__group"><span class="chapter-tasks__part">Вызовы начального уровня</span>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/297/challenge/1">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Набрать классы</span>
+                  </a>
+                </div>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/297/challenge/2">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Классы наносят ответный удар</span>
+                  </a>
+                </div>
+              </div>
+              <div class="chapter-tasks__group"><span class="chapter-tasks__part">Вызовы среднего уровня</span>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/297/challenge/3">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Ищем ошибки в HTML</span>
+                  </a>
+                </div>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/297/challenge/4">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Ищем ошибки в CSS</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="train-note train-note--text">
+    <div class="train-note__container">
+      <div class="train-note__wrap">
+        <div class="train-note__content">
+          <h3 class="train-note__title">
+            <a href="/courses/basic-html-css/screencasts/1">
+              Инструкция 1:  Как работать с сайтом на своём компьютере
+            </a>
+            <br>
+          </h3>
+          <div class="train-note__text">
+            <p>Время на&nbsp;чтение и&nbsp;отработку: 5-10 минут</p>
+            <p>Где взять сайт для экспериментов и&nbsp;открыть его на&nbsp;своём компьютере. Как вносить в&nbsp;него правки, и&nbsp;проверять, что они применились.</p>
+            <p>Отработайте инструкцию в&nbsp;перерыве между курсами. Полученные умения понадобятся вам при разработке и&nbsp;публикации своего портфолио на&nbsp;настоящем
+              <a href="https://timeweb.com/ru/services/hosting/" target="_blank">
+                хостинге
+              </a>
+              .</p>
+          </div>
+          <a class="train-note__continue button" href="/courses/basic-html-css/screencasts/1">
+            Прочитать инструкцию
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="chapter" id="part299">
+    <div class="chapter__container">
+      <div class="chapter__controls">
+        <button class="chapter__control chapter__control--current" type="button" data-toggle-part="left"><span>Теория</span><span class="chapter__control-num">0/17</span></button>
+        <button class="chapter__control" type="button" data-toggle-part="right"><span>Практика</span><span class="chapter__control-num">0/4</span></button>
+      </div>
+      <div class="chapter__wagon chapter__wagon--left chapter__display">
+        <div class="chapter__col chapter__col--theory">
+          <div class="chapter__progress chapter__progress--empty">
+            <svg class="chapter__progress-pie" width="60" height="60" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+              <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+            </svg>
+            <span class="chapter__num">0/17</span></div>
+          <p class="chapter__stats"><span class="chapter__stat">16 заданий</span><span class="chapter__stat">1 испытание</span></p>
+          <button class="chapter__on button button--transparent" type="button">Посмотреть</button>
+        </div>
+        <div class="chapter__content">
+          <div class="chapter__part chapter__part--theory">
+            <div class="chapter__wrap">
+              <div class="chapter__wrap-left">
+                <div class="chapter__title-wrap">
+                  <div class="chapter__title-image"><img src="https://assets.htmlacademy.ru/img/achievements/courses/basic-html-css/299.v2.svg" width="66" height="50" alt=""></div>
+                  <div>
+                    <h2 class="chapter__title">
+                      <a href="/courses/299">
+                        <span>Глава 2:</span> Структура HTML-документа
+                      </a>
+                    </h2>
+                    <span class="chapter__time">1 час теории , 30 минут практики</span></div>
+                </div>
+                <p class="chapter__text">Начинаем готовить разметку страницы блога, разбираемся из каких тегов она состоит и за что эти теги отвечают.</p>
+              </div>
+            </div>
+            <a class="chapter__continue button" href="/continue/course/299">
+              Начать
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="chapter__wagon chapter__wagon--right">
+        <div class="chapter__col chapter__col--practice">
+          <p class="chapter__stats"><span class="chapter__stat"> 4 вызова </span></p>
+          <button class="chapter__on button button--transparent" type="button">Посмотреть</button>
+        </div>
+        <div class="chapter__content">
+          <div class="chapter__part chapter__part--practice">
+            <div class="chapter__title-wrap">
+              <div class="chapter__title-image"><img src="https://assets.htmlacademy.ru/img/achievements/courses/basic-html-css/299.v2.svg" width="66" height="50" alt=""></div>
+              <div>
+                <h2 class="chapter__title">
+                  <a href="/courses/299/practice">
+                    <span>Глава 2:</span> Структура HTML-документа
+                  </a>
+                </h2>
+                <span class="chapter__time">1 час теории , 30 минут практики</span></div>
+            </div>
+            <div class="chapter-tasks chapter-tasks--min">
+              <div class="chapter-tasks__group"><span class="chapter-tasks__part">Вызов начального уровня</span>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/299/challenge/1">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Трудности перевода</span>
+                  </a>
+                </div>
+              </div>
+              <div class="chapter-tasks__group"><span class="chapter-tasks__part">Вызовы среднего уровня</span>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/299/challenge/2">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Разметка страницы</span>
+                  </a>
+                </div>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/299/challenge/3">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Заныриваем глубже</span>
+                  </a>
+                </div>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/299/challenge/4">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">SEO-улучшения</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="chapter" id="part301">
+    <div class="chapter__container">
+      <div class="chapter__controls">
+        <button class="chapter__control chapter__control--current" type="button" data-toggle-part="left"><span>Теория</span><span class="chapter__control-num">0/20</span></button>
+        <button class="chapter__control" type="button" data-toggle-part="right"><span>Практика</span><span class="chapter__control-num">0/5</span></button>
+      </div>
+      <div class="chapter__wagon chapter__wagon--left chapter__display">
+        <div class="chapter__col chapter__col--theory">
+          <div class="chapter__progress chapter__progress--empty">
+            <svg class="chapter__progress-pie" width="60" height="60" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+              <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+            </svg>
+            <span class="chapter__num">0/20</span></div>
+          <p class="chapter__stats"><span class="chapter__stat">19 заданий</span><span class="chapter__stat">1 испытание</span></p>
+          <button class="chapter__on button button--transparent" type="button">Посмотреть</button>
+        </div>
+        <div class="chapter__content">
+          <div class="chapter__part chapter__part--theory">
+            <div class="chapter__wrap">
+              <div class="chapter__wrap-left">
+                <div class="chapter__title-wrap">
+                  <div class="chapter__title-image"><img src="https://assets.htmlacademy.ru/img/achievements/courses/basic-html-css/301.svg" width="66" height="50" alt=""></div>
+                  <div>
+                    <h2 class="chapter__title">
+                      <a href="/courses/301">
+                        <span>Глава 3:</span> Разметка текста
+                      </a>
+                    </h2>
+                    <span class="chapter__time">1 час 10 минут теории , 50 минут практики</span></div>
+                </div>
+                <p class="chapter__text">Продолжаем верстать страницу блога, изучаем, как правильно размечать текстовое содержание: абзацы, заголовки, подзаголовки, списки и многое другое.</p>
+              </div>
+            </div>
+            <a class="chapter__continue button" href="/continue/course/301">
+              Начать
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="chapter__wagon chapter__wagon--right">
+        <div class="chapter__col chapter__col--practice">
+          <p class="chapter__stats"><span class="chapter__stat"> 5 вызовов </span></p>
+          <button class="chapter__on button button--transparent" type="button">Посмотреть</button>
+        </div>
+        <div class="chapter__content">
+          <div class="chapter__part chapter__part--practice">
+            <div class="chapter__title-wrap">
+              <div class="chapter__title-image"><img src="https://assets.htmlacademy.ru/img/achievements/courses/basic-html-css/301.svg" width="66" height="50" alt=""></div>
+              <div>
+                <h2 class="chapter__title">
+                  <a href="/courses/301/practice">
+                    <span>Глава 3:</span> Разметка текста
+                  </a>
+                </h2>
+                <span class="chapter__time">1 час 10 минут теории , 50 минут практики</span></div>
+            </div>
+            <div class="chapter-tasks chapter-tasks--min">
+              <div class="chapter-tasks__group"><span class="chapter-tasks__part">Вызов начального уровня</span>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/301/challenge/1">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Произведение искусства</span>
+                  </a>
+                </div>
+              </div>
+              <div class="chapter-tasks__group"><span class="chapter-tasks__part">Вызовы среднего уровня</span>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/301/challenge/2">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Разметка рецепта</span>
+                  </a>
+                </div>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/301/challenge/3">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Многоуровневый список покупок</span>
+                  </a>
+                </div>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/301/challenge/4">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Вечные правки</span>
+                  </a>
+                </div>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/301/challenge/5">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Странная формула</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="chapter" id="part305">
+    <div class="chapter__container">
+      <div class="chapter__controls">
+        <button class="chapter__control chapter__control--current" type="button" data-toggle-part="left"><span>Теория</span><span class="chapter__control-num">0/16</span></button>
+        <button class="chapter__control" type="button" data-toggle-part="right"><span>Практика</span><span class="chapter__control-num">0/4</span></button>
+      </div>
+      <div class="chapter__wagon chapter__wagon--left chapter__display">
+        <div class="chapter__col chapter__col--theory">
+          <div class="chapter__progress chapter__progress--empty">
+            <svg class="chapter__progress-pie" width="60" height="60" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+              <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+            </svg>
+            <span class="chapter__num">0/16</span></div>
+          <p class="chapter__stats"><span class="chapter__stat">15 заданий</span><span class="chapter__stat">1 испытание</span></p>
+          <button class="chapter__on button button--transparent" type="button">Посмотреть</button>
+        </div>
+        <div class="chapter__content">
+          <div class="chapter__part chapter__part--theory">
+            <div class="chapter__wrap">
+              <div class="chapter__wrap-left">
+                <div class="chapter__title-wrap">
+                  <div class="chapter__title-image"><img src="https://assets.htmlacademy.ru/img/achievements/courses/basic-html-css/305.svg" width="66" height="50" alt=""></div>
+                  <div>
+                    <h2 class="chapter__title">
+                      <a href="/courses/305">
+                        <span>Глава 4:</span> Ссылки и изображения
+                      </a>
+                    </h2>
+                    <span class="chapter__time">50 минут теории , 30 минут практики</span></div>
+                </div>
+                <p class="chapter__text">Завершаем разметку страницы блога, добавляем навигационные ссылки, а также разбираемся с форматами изображений.</p>
+              </div>
+            </div>
+            <a class="chapter__continue button" href="/continue/course/305">
+              Начать
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="chapter__wagon chapter__wagon--right">
+        <div class="chapter__col chapter__col--practice">
+          <p class="chapter__stats"><span class="chapter__stat"> 4 вызова </span></p>
+          <button class="chapter__on button button--transparent" type="button">Посмотреть</button>
+        </div>
+        <div class="chapter__content">
+          <div class="chapter__part chapter__part--practice">
+            <div class="chapter__title-wrap">
+              <div class="chapter__title-image"><img src="https://assets.htmlacademy.ru/img/achievements/courses/basic-html-css/305.svg" width="66" height="50" alt=""></div>
+              <div>
+                <h2 class="chapter__title">
+                  <a href="/courses/305/practice">
+                    <span>Глава 4:</span> Ссылки и изображения
+                  </a>
+                </h2>
+                <span class="chapter__time">50 минут теории , 30 минут практики</span></div>
+            </div>
+            <div class="chapter-tasks chapter-tasks--min">
+              <div class="chapter-tasks__group"><span class="chapter-tasks__part">Вызовы начального уровня</span>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/305/challenge/1">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Слушай птиц</span>
+                  </a>
+                </div>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/305/challenge/2">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Отсылки к искусству</span>
+                  </a>
+                </div>
+              </div>
+              <div class="chapter-tasks__group"><span class="chapter-tasks__part">Вызовы среднего уровня</span>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/305/challenge/3">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Карта путешествий</span>
+                  </a>
+                </div>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/305/challenge/4">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Фигуры на полях</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="chapter" id="part307">
+    <div class="chapter__container">
+      <div class="chapter__controls">
+        <button class="chapter__control chapter__control--current" type="button" data-toggle-part="left"><span>Теория</span><span class="chapter__control-num">0/16</span></button>
+        <button class="chapter__control" type="button" data-toggle-part="right"><span>Практика</span><span class="chapter__control-num">0/4</span></button>
+      </div>
+      <div class="chapter__wagon chapter__wagon--left chapter__display">
+        <div class="chapter__col chapter__col--theory">
+          <div class="chapter__progress chapter__progress--empty">
+            <svg class="chapter__progress-pie" width="60" height="60" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+              <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+            </svg>
+            <span class="chapter__num">0/16</span></div>
+          <p class="chapter__stats"><span class="chapter__stat">15 заданий</span><span class="chapter__stat">1 испытание</span></p>
+          <button class="chapter__on button button--transparent" type="button">Посмотреть</button>
+        </div>
+        <div class="chapter__content">
+          <div class="chapter__part chapter__part--theory">
+            <div class="chapter__wrap">
+              <div class="chapter__wrap-left">
+                <div class="chapter__title-wrap">
+                  <div class="chapter__title-image"><img src="https://assets.htmlacademy.ru/img/achievements/courses/basic-html-css/307.svg" width="66" height="50" alt=""></div>
+                  <div>
+                    <h2 class="chapter__title">
+                      <a href="/courses/307">
+                        <span>Глава 5:</span> Основы CSS
+                      </a>
+                    </h2>
+                    <span class="chapter__time">50 минут теории , 40 минут практики</span></div>
+                </div>
+                <p class="chapter__text">Начинаем оформление страниц блога и заодно разбираем базовые понятия CSS: правила, селекторы, свойства, значения, наследование и каскадирование.</p>
+              </div>
+            </div>
+            <a class="chapter__continue button" href="/continue/course/307">
+              Начать
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="chapter__wagon chapter__wagon--right">
+        <div class="chapter__col chapter__col--practice">
+          <p class="chapter__stats"><span class="chapter__stat"> 4 вызова </span></p>
+          <button class="chapter__on button button--transparent" type="button">Посмотреть</button>
+        </div>
+        <div class="chapter__content">
+          <div class="chapter__part chapter__part--practice">
+            <div class="chapter__title-wrap">
+              <div class="chapter__title-image"><img src="https://assets.htmlacademy.ru/img/achievements/courses/basic-html-css/307.svg" width="66" height="50" alt=""></div>
+              <div>
+                <h2 class="chapter__title">
+                  <a href="/courses/307/practice">
+                    <span>Глава 5:</span> Основы CSS
+                  </a>
+                </h2>
+                <span class="chapter__time">50 минут теории , 40 минут практики</span></div>
+            </div>
+            <div class="chapter-tasks chapter-tasks--min">
+              <div class="chapter-tasks__group"><span class="chapter-tasks__part">Вызовы начального уровня</span>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/307/challenge/1">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Stylезация</span>
+                  </a>
+                </div>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/307/challenge/2">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Списки дел</span>
+                  </a>
+                </div>
+              </div>
+              <div class="chapter-tasks__group"><span class="chapter-tasks__part">Вызов среднего уровня</span>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/307/challenge/3">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Классики</span>
+                  </a>
+                </div>
+              </div>
+              <div class="chapter-tasks__group"><span class="chapter-tasks__part">Вызов продвинутого уровня</span>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/307/challenge/4">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Новый дизайн карты путешествий</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="chapter chapter--without-border" id="part309">
+    <div class="chapter__container">
+      <div class="chapter__controls">
+        <button class="chapter__control chapter__control--current" type="button" data-toggle-part="left"><span>Теория</span><span class="chapter__control-num">0/19</span></button>
+        <button class="chapter__control" type="button" data-toggle-part="right"><span>Практика</span><span class="chapter__control-num">0/4</span></button>
+      </div>
+      <div class="chapter__wagon chapter__wagon--left chapter__display">
+        <div class="chapter__col chapter__col--theory">
+          <div class="chapter__progress chapter__progress--empty">
+            <svg class="chapter__progress-pie" width="60" height="60" stroke-dasharray="0 100" viewBox="0 0 31.83 31.83" role="presentation" aria-hidden="true">
+              <circle r="15.915" cx="15.915" cy="15.915" stroke-width="31.83"/>
+            </svg>
+            <span class="chapter__num">0/19</span></div>
+          <p class="chapter__stats"><span class="chapter__stat">18 заданий</span><span class="chapter__stat">1 испытание</span></p>
+          <button class="chapter__on button button--transparent" type="button">Посмотреть</button>
+        </div>
+        <div class="chapter__content">
+          <div class="chapter__part chapter__part--theory">
+            <div class="chapter__wrap">
+              <div class="chapter__wrap-left">
+                <div class="chapter__title-wrap">
+                  <div class="chapter__title-image"><img src="https://assets.htmlacademy.ru/img/achievements/courses/basic-html-css/309.svg" width="66" height="50" alt=""></div>
+                  <div>
+                    <h2 class="chapter__title">
+                      <a href="/courses/309">
+                        <span>Глава 6:</span> Оформление текста
+                      </a>
+                    </h2>
+                    <span class="chapter__time">1 час 10 минут теории , 30 минут практики</span></div>
+                </div>
+                <p class="chapter__text">Завершаем оформление страниц блога, учимся оформлять тексты с помощью CSS: задаём шрифты, цвета, отступы, размеры.</p>
+              </div>
+            </div>
+            <a class="chapter__continue button" href="/continue/course/309">
+              Начать
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="chapter__wagon chapter__wagon--right">
+        <div class="chapter__col chapter__col--practice">
+          <p class="chapter__stats"><span class="chapter__stat"> 4 вызова </span></p>
+          <button class="chapter__on button button--transparent" type="button">Посмотреть</button>
+        </div>
+        <div class="chapter__content">
+          <div class="chapter__part chapter__part--practice">
+            <div class="chapter__title-wrap">
+              <div class="chapter__title-image"><img src="https://assets.htmlacademy.ru/img/achievements/courses/basic-html-css/309.svg" width="66" height="50" alt=""></div>
+              <div>
+                <h2 class="chapter__title">
+                  <a href="/courses/309/practice">
+                    <span>Глава 6:</span> Оформление текста
+                  </a>
+                </h2>
+                <span class="chapter__time">1 час 10 минут теории , 30 минут практики</span></div>
+            </div>
+            <div class="chapter-tasks chapter-tasks--min">
+              <div class="chapter-tasks__group"><span class="chapter-tasks__part">Вызовы начального уровня</span>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/309/challenge/1">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Тонкости типографики</span>
+                  </a>
+                </div>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/309/challenge/2">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Пофиксить, что можно</span>
+                  </a>
+                </div>
+              </div>
+              <div class="chapter-tasks__group"><span class="chapter-tasks__part">Вызовы среднего уровня</span>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/309/challenge/3">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Декоративное подчёркивание</span>
+                  </a>
+                </div>
+                <div class="chapter-tasks__item">
+                  <a class="chapter-tasks__link" href="/courses/309/challenge/4">
+                    <span class="chapter-tasks__icon">
+                    <svg aria-hidden="true" width="14" height="14">
+                      <use xlink:href="/img/sprites/general.v27.svg#chapter_knuckle"></use>
+                    </svg>
+                    </span><span class="chapter-tasks__title">Пофиксить, что можно: продолжение</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="train-note train-note--text">
+    <div class="train-note__container">
+      <div class="train-note__wrap">
+        <div class="train-note__content">
+          <h3 class="train-note__title">
+            <a href="/courses/basic-html-css/screencasts/3">
+              Инструкция 2:  Как опубликовать простой сайт в интернете
+            </a>
+            <br>
+          </h3>
+          <div class="train-note__text">
+            <p>Время на&nbsp;чтение и&nbsp;отработку: 15-20 минут</p>
+            <p>Какой должна быть структура проекта. Как создать GitHub-репозиторий и&nbsp;сохранить в&nbsp;нём код проекта. Как опубликовать проект из&nbsp;репозитория в&nbsp;интернете.</p>
+            <p>Отработайте инструкцию в&nbsp;перерыве между курсами. Полученные умения понадобятся вам для организации и&nbsp;хранения кода своих проектов.</p>
+          </div>
+          <a class="train-note__continue button" href="/courses/basic-html-css/screencasts/3">
+            Прочитать инструкцию
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="chapter chapter--final  chapter--prefinal">
+    <div class="chapter__container">
+      <div class="chapter__content">
+        <div class="chapter__wrap">
+          <div class="chapter__wrap-left">
+            <h2 class="chapter__title">Скоро будут итоговые испытания!</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<footer class="page-footer">
+  <div class="page-footer__inner">
+    <div class="page-footer__social">
+      <a class="page-footer__logo" href="/" rel="home" aria-label="На главную HTML Academy">
+        <img src="https://assets.htmlacademy.ru/img/logo.v2.svg" width="161" height="55" alt="Логотип HTML Academy">
+      </a>
+      <ul class="social-links social-links--contrast social-links--gutters page-footer__social-links">
+        <li>
+          <a class="social-links__link" href="https://vk.com/htmlacademy" target="_blank" rel="noopener nofollow" title="Наш Вконтакте">
+            <span class="sr-only">Наша группа в ВК</span>
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-links__link" href="https://www.facebook.com/htmlacademy" target="_blank" rel="noopener nofollow" title="Наш Фейсбук">
+            <span class="sr-only">Наша группа в Facebook</span>
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-links__link" href="https://www.youtube.com/user/htmlacademyru" rel="noopener nofollow" target="_blank" title="Наш канал на YouTube">
+            <span class="sr-only">Наш канал на Youtube</span>
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-links__link" href="https://twitter.com/htmlacademy_ru" target="_blank" rel="noopener nofollow" title="Наш Твитер">
+            <span class="sr-only">Наша страница в Twitter</span>
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-links__link" href="https://www.instagram.com/htmlacademy/" rel="noopener nofollow" target="_blank" title="Наш Инстаграм">
+            <span class="sr-only">Наша страница в Instagram</span>
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__block-group" role="navigation" aria-label="Дополнительное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <div class="page-footer__item page-footer__item--courses-professions">
+        <div class="page-footer__sub-item">
+          <h3 class="page-footer__header">Курсы</h3>
+          <ul class="page-footer__list">
+            <li itemprop="name">
+              <a href="/courses" itemprop="url">
+                Интерактивные курсы
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/pricing" itemprop="url">
+                Подписка
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__sub-item">
+          <h3 class="page-footer__header">Профессии</h3>
+          <ul class="page-footer__list">
+            <li itemprop="name">
+              <a href="/profession/frontender" itemprop="url">
+                Фронтенд-разработчик
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/profession/react" itemprop="url">
+                React-разработчик
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__item page-footer__item--intensives">
+        <a class="page-footer__header" href="/intensive">
+          Интенсивы
+        </a>
+        <ul class="page-footer__list">
+          <li itemprop="name">
+            <a href="/intensive/htmlcss" itemprop="url">
+              HTML и CSS,<br>
+              уровень 1
+            </a>
+          </li>
+          <li itemprop="name">
+            <a href="/intensive/adaptive" itemprop="url">
+              HTML и CSS,<br>
+              уровень 2
+            </a>
+          </li>
+          <li itemprop="name">
+            <a href="/intensive/javascript" itemprop="url">
+              JavaScript,<br>
+              уровень 1
+            </a>
+          </li>
+          <li itemprop="name">
+            <a href="/intensive/ecmascript" itemprop="url">
+              JavaScript,<br>
+              уровень 2
+            </a>
+          </li>
+          <li itemprop="name">
+            <a href="/intensive/react" itemprop="url">
+              JavaScript,<br>
+              уровень 3
+            </a>
+          </li>
+          <li itemprop="name">
+            <a href="/intensive/php" itemprop="url">
+              PHP, уровень 1
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__item page-footer__item--information-blog">
+        <div class="page-footer__sub-item">
+          <a class="page-footer__header" href="/blog">
+            Блог
+          </a>
+          <ul class="page-footer__list">
+            <li itemprop="name">
+              <a href="/blog/useful" itemprop="url">
+                Полезные статьи
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/blog/video/shorts" itemprop="url">
+                HTML Шорты
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/blog/career" itemprop="url">
+                Карьера выпускников
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/blog/education" itemprop="url">
+                Обучение у нас
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__sub-item">
+          <h3 class="page-footer__header">Информация</h3>
+          <ul class="page-footer__list">
+            <li itemprop="name">
+              <a href="/about" itemprop="url">
+                Об Академии
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/hr" itemprop="url">
+                Вакансии
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="https://career.htmlacademy.ru/about" itemprop="url">
+                О центре карьеры
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="https://nexus.htmlacademy.ru" itemprop="url">
+                База выпускников
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__item page-footer__item--services-others">
+        <div class="page-footer__sub-item">
+          <h3 class="page-footer__header">Услуги</h3>
+          <ul class="page-footer__list">
+            <li itemprop="name">
+              <a href="/tutors" itemprop="url">
+                Для наставников
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/for_schools" itemprop="url">
+                Для учителей
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__sub-item">
+          <h3 class="page-footer__header">Остальное</h3>
+          <ul class="page-footer__list">
+            <li itemprop="name">
+              <a href="/contacts" itemprop="url">
+                Написать нам
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="/events" itemprop="url">
+                Мероприятия
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="http://forum.academy" itemprop="url">
+                Форум
+              </a>
+            </li>
+            <li itemprop="name">
+              <a href="https://liga-a.ru/" itemprop="url">
+                Лига А.
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="page-footer__bottom" role="contentinfo"><span class="page-footer__bottom-links">
+      <a href="/docs/agreement">
+        Соглашение
+      </a>
+      <a href="/docs/privacy">
+        Конфиденциальность
+      </a>
+      <a href="/docs/edu">
+        Сведения об образовательной организации
+      </a>
+      <a href="/docs/license">
+        Лицензия № 3026
+      </a>
+      </span><span class="page-footer__copyright">© ООО «Интерактивные обучающие технологии», 2013−2019</span><span class="page-footer__way-of-love">
+      <a href="https://github.com/htmlacademy" target="_blank" rel="noopener nofollow" aria-label="Наш профиль на Github">
+        <img src="https://assets.htmlacademy.ru/img/icons/icon_with-love.v2.svg" width="91" height="16" alt="Сделано с любовью в Санкт-Петербурге" title="Сделано с любовью в Санкт-Петербурге">
+      </a>
+      </span></p>
+  </div>
+</footer>
+<div class="modal">
+  <div class="modal__inner">
+    <div class="modal__wrapper js-login hidden">
+      <button class="modal__close icon-close" type="button" title="Закрыть" data-modal="close" data-value="login"></button>
+      <h4 class="modal__header">Вход</h4>
+      <ul class="modal__social modal__social--three">
+        <li class="modal__social-vk">
+          <a href="/login/vk?init=1&amp;redirect_url=https://htmlacademy.ru/courses/basic-html-css" rel="nofollow" title="Войти через Вконтакте">
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal__social-fb">
+          <a href="/login/fb?init=1&amp;redirect_url=https://htmlacademy.ru/courses/basic-html-css" rel="nofollow" title="Войти через Фейсбук">
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal__social-google">
+          <a href="/login/google?init=1&amp;redirect_url=https://htmlacademy.ru/courses/basic-html-css" rel="nofollow" title="Войти через Google">
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#google"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="modal__or"><span>или</span></div>
+      <form class="modal__form form" action="/login?redirect_url=https://htmlacademy.ru/courses/basic-html-css" autocomplete="off" method="post" data-submit="o">
+        <input type="hidden" name="ha_name" value="ha5d39f35ba49d4">
+        <input type="hidden" name="ha_value" value="9fff0abad3e45bbfa05ad0f56cc37d07">
+        <div class="form__group">
+          <label class="sr-only" for="login-email">Эл. почта</label>
+          <div class="form__group-fields">
+            <input class="field field--text field--full-width" type="email" name="email" value="" id="login-email" required placeholder="Эл. почта" data-email-suggest="on">
+          </div>
+        </div>
+        <div class="form__group">
+          <label class="sr-only" for="login-password">Пароль</label>
+          <div class="form__group-fields">
+            <input class="field field--text field--full-width ym-disable-keys" type="password" name="password" value="" id="login-password" required placeholder="Пароль">
+          </div>
+        </div>
+        <input class="button button--full-width" type="submit" data-submit-text="Вхожу…" value="Войти">
+      </form>
+      <p class="modal__forgot-password">
+        <a href="/recover?redirect_url=https://htmlacademy.ru/courses/basic-html-css" data-modal="open" data-value="recover">
+          Забыли пароль?
+        </a>
+      </p>
+      <a class="modal__bottom-link" href="/signup?redirect_url=https://htmlacademy.ru/courses/basic-html-css" data-modal="open" data-value="register">
+        Регистрация
+      </a>
+    </div>
+    <div class="modal__wrapper js-register hidden">
+      <button class="modal__close icon-close" type="button" title="Закрыть" data-modal="close" data-value="register"></button>
+      <h4 class="modal__header">Регистрация</h4>
+      <ul class="modal__social modal__social--three">
+        <li class="modal__social-vk">
+          <a href="/login/vk?init=1&amp;redirect_url=https://htmlacademy.ru/courses/basic-html-css" rel="nofollow" title="Зарегистрироваться через Вконтакте">
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal__social-fb">
+          <a href="/login/fb?init=1&amp;redirect_url=https://htmlacademy.ru/courses/basic-html-css" rel="nofollow" title="Зарегистрироваться через Фейсбук">
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal__social-google">
+          <a href="/login/google?init=1&amp;redirect_url=https://htmlacademy.ru/courses/basic-html-css" rel="nofollow" title="Зарегистрироваться через Google">
+            <svg aria-hidden="true" width="32" height="32">
+              <use xlink:href="/img/sprites/general.v27.svg#google"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="modal__or"><span>или</span></div>
+      <form class="modal__form form" action="/signup?redirect_url=https://htmlacademy.ru/courses/basic-html-css" autocomplete="off" method="post" data-submit="o">
+        <input type="hidden" name="ha_name" value="ha5d39f35ba49d4">
+        <input type="hidden" name="ha_value" value="9fff0abad3e45bbfa05ad0f56cc37d07">
+        <div class="form__group">
+          <label class="sr-only" for="registration-email">Эл. почта</label>
+          <input class="field field--text field--full-width" type="email" name="email" placeholder="Эл. почта" value="" id="registration-email" data-email-suggest="on">
+        </div>
+        <div class="form__group">
+          <label class="sr-only" for="registration-password">Пароль</label>
+          <input class="field field--text field--full-width ym-disable-keys" type="password" name="password" placeholder="Пароль" id="registration-password">
+        </div>
+        <input class="button button--full-width" type="submit" data-submit-text="Регистрирую…" value="Зарегистрироваться">
+      </form>
+      <p class="modal__text">Нажимая кнопку «Зарегистрироваться», вы даёте своё согласие на обработку персональных данных в соответствии с «
+        <a href="/docs/privacy" target="_blank">
+          Политикой конфиденциальности
+        </a>
+        » и соглашаетесь с «
+        <a href="/docs/agreement" target="_blank">
+          Условиями оказания услуг
+        </a>
+        ».</p>
+      <a class="modal__bottom-link" href="/login?redirect_url=https://htmlacademy.ru/courses/basic-html-css" data-modal="open" data-value="login">
+        Вход
+      </a>
+    </div>
+    <div class="modal__wrapper modal__wrapper--no-btn-bottom js-recover hidden">
+      <button class="modal__close icon-close" type="button" title="Закрыть" data-modal="close" data-value="recover"></button>
+      <h4 class="modal__header">Восстановление доступа</h4>
+      <p class="modal__text-accent">Забыли пароль или потеряли доступ к профилю? Введите привязанную к профилю эл. почту, мы отправим вам письмо со ссылкой для восстановления.</p>
+      <form class="modal__form form" action="/recover?redirect_url=https://htmlacademy.ru/courses/basic-html-css" autocomplete="off" method="post" data-submit="o">
+        <input type="hidden" name="ha_name" value="ha5d39f35ba49d4">
+        <input type="hidden" name="ha_value" value="9fff0abad3e45bbfa05ad0f56cc37d07">
+        <div class="form__group">
+          <label class="form__label" for="recover-email">Эл. почта</label>
+          <div class="form__group-fields">
+            <input class="field field--text field--full-width" type="email" name="email" value="" id="recover-email" required placeholder="Эл. почта" data-email-suggest="on">
+          </div>
+        </div>
+        <input class="button button--full-width" type="submit" data-submit-text="Отправляю…" value="Отправить">
+      </form>
+      <p class="modal__text">Забыли привязать эл. почту к профилю?
+        <a href="/contacts">
+          Напишите нам
+        </a>
+        , мы поможем.</p>
+    </div>
+  </div>
+</div>
+<script async src="https://assets.htmlacademy.ru/js/general.v66.js" data-assets="https://assets.htmlacademy.ru" data-require="modal,form,mailcheck"></script><script src="https://assets.htmlacademy.ru/js/train.v33.js"></script><script>(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-173652-9L5mW';</script>
+</body>
+</html>
