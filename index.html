@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
+    <script>
+      var b=document.documentElement.classList; // получаем список классов документа
+      b.remove('no-js');                        // убираем класс no-js так как JS работает
+      if(!window.Promise||!window.sessionStorage||!!sessionStorage.getItem('muller.v2'))
+      {
+        b.add('muller')                         // добавляем класс muller
+      }
+    </script>
+    <!--<script>
+      dataLayer=[];
+    </script>
+    <script>
+      (function(w,d,s,l,i){ 
+        w[l]=w[l]||[];w[l].push({ 'gtm.start':new Date().getTime(),event:'gtm.js' });
+        var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f); 
+      })
+      (window,document,'script','dataLayer','GTM-MM92BM');
+    </script>-->
+    <!--/*/*<link rel="dns-prefetch" href="https://assets.htmlacademy.ru">*/*/-->
+    <link rel="stylesheet" href="css/style.core.css">
+    <link rel="stylesheet" href="css/style.index-page.css">
+    <!--<link rel="preload" as="script" href="js/general.js">-->
+    <title>HTML Academy: интерактивные онлайн-курсы по HTML, CSS и JavaScript</title>
+    <!--<meta name="theme-color" content="#2f358f">
+    <link rel="mask-icon" href="G:\МОИ ДОКУМЕНТЫ\КУРСЫ\HTML\myhtmlacademy\favicon.svg" color="#2f358f">
+    <link rel="manifest" href="/htmlacademy.webmanifest">
+    <meta name="application-name" content="HTML Academy">
+    <meta name="apple-mobile-web-app-title" content="HTML Academy">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@htmlacademy_ru">
+    <meta property="fb:app_id" content="144426935714125">
+    <meta property="og:site_name" content="HTML Academy">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://htmlacademy.ru">
+    <meta name="yandex-tableau-widget" content="logo=img/logo--tableau.png,color=#ee5b33">
+    <meta name="format-detection" content="telephone=no">-->
+  </head>
+  <body>
+    <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MM92BM" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <header class="page-header page-header--home">
+      <h1 class="sr-only">Интерактивные онлайн-курсы HTML Academy</h1>
+      <div class="page-header__inner">
+        <div class="page-header__top">
+          <a class="page-header__logo" href="/" aria-label="На главную HTML Academy">
+            <img src="img/logo.svg" width="104" height="36" alt="HTML Academy">
+          </a>
+          <nav class="main-nav" aria-label="Основное меню" itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="main-nav__list main-nav__list--main main-nav__list--adaptive">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="/courses">
+                  <span class="main-nav__icon">
+                  <svg aria-hidden="true" width="16" height="16">
+                    <use xlink:href="img/general.svg#course"></use>
+                  </svg>
+                  </span>Курсы
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="/profession/frontender">
+                  <span class="main-nav__icon">
+                  <svg aria-hidden="true" width="16" height="16">
+                    <use xlink:href="img/general.svg#hat"></use>
+                  </svg>
+                  </span>Профессия
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="/intensive">
+                  <span class="main-nav__icon">
+                  <svg aria-hidden="true" width="16" height="16">
+                    <use xlink:href="img/general.svg#intensive"></use>
+                  </svg>
+                  </span>Интенсивы
+                </a>
+              </li>
+            </ul>
+            <button class="main-nav__trigger" type="button" title="Главное меню">
+              <span></span>
+            </button>
+            <div class="main-nav__dropdown" id="main-menu">
+              <div class="main-nav__dropdown-inner">
+                <ul class="main-nav__list main-nav__list--main">
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/courses" itemprop="url">
+                      <span class="main-nav__icon" aria-hidden="true">
+                      <svg aria-hidden="true" width="16" height="16">
+                        <use xlink:href="img/general.svg#course"></use>
+                      </svg>
+                      </span>Курсы
+                    </a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--dropdown" itemprop="name"><span class="main-nav__link" title="Профессии"><span class="main-nav__icon">
+                    <svg aria-hidden="true" width="16" height="16">
+                      <use xlink:href="img/general.svg#hat"></use>
+                    </svg>
+                    </span>Профессии</span>
+                    <ul class="main-nav__list main-nav__list--lvl2">
+                      <li class="main-nav__item" itemprop="name">
+                        <a class="main-nav__link" href="/profession/frontender">
+                          Фронтенд-разработчик
+                        </a>
+                      </li>
+                      <li class="main-nav__item" itemprop="name">
+                        <a class="main-nav__link" href="/profession/react">
+                          React-разработчик
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="main-nav__item main-nav__item--dropdown" itemprop="name">
+                    <a class="main-nav__link" href="/intensive" itemprop="url">
+                      <span class="main-nav__icon" aria-hidden="true">
+                      <svg aria-hidden="true" width="16" height="16">
+                        <use xlink:href="img/general.svg#intensive"></use>
+                      </svg>
+                      </span>Интенсивы
+                    </a>
+                    <ul class="main-nav__list main-nav__list--lvl2">
+                      <li class="main-nav__item" itemprop="name">
+                        <a class="main-nav__link" href="/intensive/htmlcss" itemprop="url">
+                          HTML и CSS, уровень 1
+                        </a>
+                      </li>
+                      <li class="main-nav__item" itemprop="name">
+                        <a class="main-nav__link" href="/intensive/adaptive" itemprop="url">
+                          HTML и CSS, уровень 2
+                        </a>
+                      </li>
+                      <li class="main-nav__item" itemprop="name">
+                        <a class="main-nav__link" href="/intensive/javascript" itemprop="url">
+                          JavaScript, уровень 1
+                        </a>
+                      </li>
+                      <li class="main-nav__item" itemprop="name">
+                        <a class="main-nav__link" href="/intensive/ecmascript" itemprop="url">
+                          JavaScript, уровень 2
+                        </a>
+                      </li>
+                      <li class="main-nav__item" itemprop="name">
+                        <a class="main-nav__link" href="/intensive/react" itemprop="url">
+                          JavaScript, уровень 3
+                        </a>
+                      </li>
+                      <li class="main-nav__item" itemprop="name">
+                        <a class="main-nav__link" href="/intensive/nodejs" itemprop="url">
+                          Node.js, уровень 1
+                        </a>
+                      </li>
+                      <li class="main-nav__item" itemprop="name">
+                        <a class="main-nav__link" href="/intensive/php" itemprop="url">
+                          PHP, уровень 1
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="main-nav__list main-nav__list--user">
+                  <li class="main-nav__item" itemprop="name">
+                    <a class="main-nav__link" href="/signup?redirect_url=/" title="Регистрация" data-modal="open" data-value="register" itemprop="url">
+                      <span class="main-nav__icon" aria-hidden="true">
+                      <svg aria-hidden="true" width="16" height="16">
+                        <use xlink:href="img/general.svg#user"></use>
+                      </svg>
+                      </span>Регистрация
+                    </a>
+                  </li>
+                  <li class="main-nav__item main-nav__item--login" itemprop="name">
+                    <a class="main-nav__link" href="/login?redirect_url=/" title="Войти" data-modal="open" data-value="login" itemprop="url">
+                      <span class="main-nav__icon" aria-hidden="true">
+                      <svg aria-hidden="true" width="16" height="16">
+                        <use xlink:href="img/general.svg#login"></use>
+                      </svg>
+                      </span>Войти
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="start-home">
+          <div class="start-home__top">
+            <div class="start-home__logo">
+              <img src="https://assets.htmlacademy.ru/img/logo--home-large.v2.svg" width="332" height="149" alt="HTML Academy" title="HTML Academy" aria-hidden="true">
+            </div>
+            <div class="start-home__message">
+              <p class="start-home__message-text">Научитесь создавать и программировать современные веб-интерфейсы, начните карьеру в IT, оттачивайте своё мастерство.</p>
+              <p class="start-home__btn-wrapper">
+                <a class="button button--green button--large button--wide button--split-effect" href="/continue?from=topBtn">
+                  Начать учиться
+                </a>
+              </p>
+            </div>
+          </div>
+          <span class="start-home__decoration-01" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="130" height="104" class="header-decoration-01" viewBox="0 0 130 104">
+            <g class="header-decoration-01__group">
+              <path d="M62.3 104L112 74.4l-.2-.1-49.1-28.2-50 28.8z" class="header-decoration-01__element-01"/>
+              <path d="M73.4 83.4l49.7-29.5-.2-.1-49.2-28.2-49.9 28.7z" class="header-decoration-01__element-02"/>
+              <path d="M80.2 67.7l49.7-29.6-.2-.1L80.6 9.8l-50 28.8z" class="header-decoration-01__element-03"/>
+              <g class="header-decoration-01__element-04">
+                <path d="M72.8 33.1l15.6-9.3-7.4-4.5-15.4-8.9-15.6 9zM98.2 35.4l7.7-4.6-3.7-2.3-7.6-4.4-7.8 4.5z"/>
+              </g>
+            </g>
+          </svg>
+          </span><span class="start-home__decoration-02" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="123" height="92" class="header-decoration-02" viewBox="0 0 123 92">
+            <g class="header-decoration-02__group">
+              <path d="M73.1 92l48.2-28.6-.2-.1-47.7-27.4L25 63.8z" class="header-decoration-02__element-01"/>
+              <path d="M63.8 72.6L112 43.9l-.2-.1-47.7-27.3-48.4 27.8z" class="header-decoration-02__element-02"/>
+              <path d="M48.1 72.6l48.3-28.7-.3-.1-47.6-27.3L0 44.3z" class="header-decoration-02__element-03"/>
+              <path d="M34.3 22.3l15.1-9-7.1-4.4-15-8.6L12.2 9z" class="header-decoration-02__element-04"/>
+              <path d="M29.4 44.7l7.5-4.4-3.6-2.2-7.4-4.3-7.6 4.3z" class="header-decoration-02__element-05"/>
+              <path d="M115.3 37.7l7.5-4.5-3.6-2.2-7.4-4.2-7.6 4.3z" class="header-decoration-02__element-06"/>
+            </g>
+          </svg>
+          </span><span class="start-home__decoration-04" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" class="header-decoration-04" viewBox="-20 -5 80 50">
+            <g class="header-decoration-04__group">
+              <path d="M19.9 2.5l33.9 19.8V42L19.9 22.3z" class="header-decoration-04__element-01"/>
+              <path d="M0 .3l33.9 19.8v19.7L0 20.1z" class="header-decoration-04__element-02"/>
+            </g>
+          </svg>
+          </span><span class="start-home__decoration-05" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="42" height="39" class="header-decoration-05" viewBox="0 0 42 39">
+            <g class="header-decoration-05__group">
+              <g class="header-decoration-05__element-01">
+                <path d="M28.4 1.6L.1 18.2M0 19.6L28.5 2.9 28.4.3.1 16.9zM28.4 6.9L.1 23.5M0 24.9L28.5 8.2l-.1-2.6L.1 22.2zm28.4-12.7L.1 28.8M0 30.2l28.5-16.7-.1-2.6L.1 27.5zm28.4-12.9L.1 33.9M0 35.3l28.5-16.7-.1-2.6L.1 32.7z"/>
+              </g>
+              <g class="header-decoration-05__element-02">
+                <path d="M41.7 5.3L13.4 21.9M13.3 23.3L41.8 6.6 41.7 4 13.4 20.6zm28.4-12.8L13.4 27.2M13.3 28.6l28.5-16.7-.1-2.6-28.3 16.6zm28.4-12.8L13.4 32.5M13.3 33.9l28.5-16.7-.1-2.6-28.3 16.6zM41.7 21L13.4 37.6M13.3 39l28.5-16.7-.1-2.6-28.3 16.6z"/>
+              </g>
+            </g>
+          </svg>
+          </span><span class="start-home__decoration-06" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="157" height="100" class="header-decoration-06" viewBox="-20 0 157 100">
+            <path d="M26.1 40.4V17.3L56.1 0v22.7z" class="header-decoration-06__element-01"/>
+            <path d="M20.3 52.1V29l30-17.3v22.8z" class="header-decoration-06__element-02"/>
+            <path d="M57.7 36.2L18.2 60.5v1.9l39.5-24zm5.4 2.7L17.6 66v1.9l45.5-26.8zM106.6 18L6.1 80.1V82l100.5-61.8zM82.9 39L43.4 63.3v2l39.5-24.1z" class="header-decoration-06__element-03"/>
+            <path d="M29.3 56.6V43.3l17.3-10.1v13.2z" class="header-decoration-06__element-04"/>
+            <path d="M57.7 78.7v-9.6L83 54.5v9.2z" class="header-decoration-06__element-05"/>
+            <path d="M-10.7 50.4l9.1 5.3v14.2l-9.1-5.4z" class="header-decoration-06__element-06"/>
+            <path d="M-15 55.3l9.1 5.3v14.2l-9.1-5.3z" class="header-decoration-06__element-07"/>
+          </svg>
+          </span>
+        </div>
+        rel=&quot;canonical&quot;
+      </div>
+    </header>
+    
+    <script async src="https://assets.htmlacademy.ru/js/general.js" data-assets="https://assets.htmlacademy.ru" data-require="toggle,modal,form,mailcheck"></script><script>(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-173652-9L5mW';</script>
+  </body>
+</html>
